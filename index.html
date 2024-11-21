@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skor Footer</title>
+    <title>Skor</title>
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <!-- Indhold af siden -->
+    <header>
+        <nav class="nav-title">
+            <a href="index.html" class="logo">SKOR</a> <!-- Logoet er her til venstre -->
+        </nav>
+        <nav class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </nav>
+        <input type="checkbox" id="nav-check">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="#">SPIL DART</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#">BOOK EN BANE</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">REGLER</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">KARAOKE</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#">BOOK VORES RUM</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">SANGKATALOG</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">PRISER</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">ARRENGEMENTER</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#">PRIVATFESTER</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">FIRMAEVENTS</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">OM SKOR</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#">VORES VISION&MISSION</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">MØD TEAMET</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">KONTAKT OS</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item booking-item">
+                <a href="#">BOOK NU</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <!-- Kontakt -->
@@ -15,23 +65,24 @@
                 <h3>Kontakt</h3>
                 <p>Telefontorvet 10, Aarhus</p>
                 <p><a href="mailto:skorbar@skorbar.dk">skorbar@skorbar.dk</a></p>
-                <div id="map"></div> <!-- Dette ID bruges i JS -->
+                <div id="map"></div>
             </div>
             <!-- Åbningstider -->
             <div class="footer-section">
                 <h3>Åbningstider</h3>
-                <p>Mandag: 15-23</p>
-                <p>Tirsdag: 15-23</p>
-                <p>Onsdag: 15-23</p>
-                <p>Torsdag: 15-23</p>
-                <p>Fredag: 13-02</p>
-                <p>Lørdag: 13-02</p>
-                <p>Søndag: 15-23</p>
+                <p>Mandag: 15:00-23:00</p>
+                <p>Tirsdag: 15:00-23:00</p>
+                <p>Onsdag: 15:00-23:00</p>
+                <p>Torsdag: 15:00-23:00</p>
+                <p>Fredag: 13:00-02:00</p>
+                <p>Lørdag: 13:00-02:00</p>
+                <p>Søndag: 15:00-23:00</p>
             </div>
             <!-- Hvor finder jeg? -->
             <div class="footer-section">
-                <h3>Hvor finder jeg?</h3>
+                <h3>Hvor finder jeg</h3>
                 <p><a href="#">Menukort</a></p>
+                <p><a href="#">Booking</a></p>
                 <h3>Find os</h3>
                 <div class="social-icons">
                     <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
@@ -41,7 +92,8 @@
         </div>
     </footer>
 
-    <!-- Linker til footer.js i slutningen af body -->
+    <!-- Linker til js i slutningen af body -->
     <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

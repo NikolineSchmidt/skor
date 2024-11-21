@@ -1,0 +1,155 @@
+/* Grundlæggende styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #7a58e4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;  /* Øg vertikal padding for at gøre navbaren tykkere */
+    position: relative;
+    height: 80px;  /* Øg højden på navbaren */
+}
+
+#nav-check {
+    display: none; /* Skjult på desktop */
+}
+
+/* Logoet til venstre */
+.nav-title .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Burger menu */
+.nav-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.nav-btn label {
+    display: block;
+    padding: 10px;
+    background-color: #7a58e4;
+    border: none;
+}
+
+.nav-btn label span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+/* Mobile menu */
+.nav-list {
+    display: none; /* Skjuler menu på mobil */
+    flex-direction: column;
+    width: 100%;  /* Menuen fylder hele skærmen */
+    position: absolute;
+    top: 50px; /* Sørger for at menuen ikke overlapper logoet */
+    left: 0;
+    background-color: #7a58e4;
+}
+
+.nav-list-item {
+    list-style: none;
+    text-align: left; /* Menupunkter står til venstre */
+    padding: 20px 15px;
+    /* Fjern border-bottom linjer */
+    border-bottom: none;
+}
+
+.nav-list-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Undermenu */
+.nav-sub-menu {
+    display: none; /* Skjuler undermenu */
+    background-color: #7a58e4;
+    list-style: none;
+    padding: 0;
+    margin-left: 20px; /* Flytter undermenuen mod højre */
+}
+
+.nav-sub-menu-item a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Når burger-menuen er åben */
+#nav-check:checked + .nav-title + .nav-btn + .nav-list {
+    display: flex;
+}
+
+#nav-check:checked + .nav-title + .nav-btn + .nav-list .booking-item {
+    display: block;
+    background-color: #7a58e4; /* Sørger for at knappen matcher menuens farve */
+}
+
+/* Vis undermenu når et menupunkt er klikket (mobil) */
+#nav-check:checked + .nav-title + .nav-btn + .nav-list .nav-list-item.active .nav-sub-menu {
+    display: block;
+    text-align: center; /* Centrerer undermenuerne */
+}
+
+/* Undermenu vises ved hover på desktop */
+.nav-list-item:hover .nav-sub-menu {
+    display: block;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    .nav-btn {
+        display: none; /* Skjuler burger-menu på desktop */
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        position: static; /* Sørger for at menuen ikke er absolut positioneret */
+    }
+
+    .nav-list-item {
+        text-align: left;
+    }
+
+    .nav-list-item:hover .nav-sub-menu {
+        display: block;
+    }
+
+    .nav-sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #7a58e4;
+        padding: 0;
+        width: auto;
+        min-width: 200px;
+    }
+
+    /* Book nu knappen vises på desktop */
+    .booking-item {
+        display: block;
+    }
+}

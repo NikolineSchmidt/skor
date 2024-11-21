@@ -66,6 +66,7 @@ footer {
     .footer-section h3 {
         font-size: 35px;    /* Juster fontstørrelsen for mobil */
         text-align: left;   /* Venstrejusteret på mobil */
+        margin-bottom: 15px;
     }
 
     .footer-section p,
