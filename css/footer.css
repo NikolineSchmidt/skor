@@ -1,0 +1,89 @@
+/* Footer styles */
+footer {
+    background-color: #3db180;
+    color: #fff;
+    padding: 20px 15px;
+    text-align: center; /* Standard tekstjustering */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start; /* Venstrejustering af indhold i footer */
+    padding-left: 20px; /* Tilføjer ekstra luft til venstre */
+    margin-right: 20px; /* En smule margin på højre side */
+}
+
+.footer-section {
+    margin-bottom: 10px;
+    width: 100%; /* Gør hver sektion fuld bredde */
+}
+
+.footer-section h3 {
+    font-size: 35px; /* Gør overskriften større */
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Justering af Google Maps container for at gøre det mindre */
+#map {
+    width: 100%;            /* Sørger for, at kortet fylder bredden af containeren */
+    max-width: 300px;       /* Begrænser maksimal bredde til 300px for mindre kort */
+    height: 150px;          /* Gør kortet lavere for at gøre det mindre */
+    margin-top: 20px;       /* Afstand til toppen for bedre visualisering */
+    border-radius: 10px;    /* Runde hjørner */
+    overflow: hidden;       /* Sørger for at indholdet bliver indenfor de runde kanter */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tilføjer en subtil skygge for at fremhæve kortet */
+}
+
+/* For iframe i map container */
+#map iframe {
+    width: 100%;            /* Fuld bredde af container */
+    height: 100%;           /* Fuld højde af container */
+    border-radius: 10px;    /* Giver iframe de samme runde hjørner */
+    border: none;           /* Fjerner kantlinjen omkring iframe */
+}
+
+/* For at sikre, at links altid er hvide */
+.footer-section a {
+    color: #fff;            /* Sætter tekstfarven til hvid for alle links */
+    text-decoration: none;  /* Fjerner underline fra links */
+    transition: color 0.3s; /* Tilføjer en smooth transition på hover */
+}
+
+/* Sørger for, at links forbliver hvide også når de bliver markeret eller klikker */
+.footer-section a:visited {
+    color: #fff;            /* Sørger for, at besøgte links forbliver hvide */
+}
+
+.footer-section a:hover {
+    color: #fff;            /* Bevarer hvid farve på hover */
+}
+
+/* Justering af tekst og links på mobil */
+@media (max-width: 767px) {
+    .footer-section h3 {
+        font-size: 35px;    /* Juster fontstørrelsen for mobil */
+        text-align: left;   /* Venstrejusteret på mobil */
+    }
+
+    .footer-section p,
+    .footer-section a {
+        text-align: left;   /* Venstrejusteret tekst og links på mobil */
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;   /* Juster tekstjusteringen til venstre på desktop */
+    }
+
+    .footer-section {
+        flex: 1;
+        margin-right: 20px;
+    }
+}

@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKOR</title>
+    <title>Skor Footer</title>
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    
+    <!-- Indhold af siden -->
+    <footer>
+        <div class="footer-container">
+            <!-- Kontakt -->
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Telefontorvet 10, Aarhus</p>
+                <p><a href="mailto:skorbar@skorbar.dk">skorbar@skorbar.dk</a></p>
+                <div id="map"></div> <!-- Dette ID bruges i JS -->
+            </div>
+            <!-- Åbningstider -->
+            <div class="footer-section">
+                <h3>Åbningstider</h3>
+                <p>Mandag: 15-23</p>
+                <p>Tirsdag: 15-23</p>
+                <p>Onsdag: 15-23</p>
+                <p>Torsdag: 15-23</p>
+                <p>Fredag: 13-02</p>
+                <p>Lørdag: 13-02</p>
+                <p>Søndag: 15-23</p>
+            </div>
+            <!-- Hvor finder jeg? -->
+            <div class="footer-section">
+                <h3>Hvor finder jeg?</h3>
+                <p><a href="#">Menukort</a></p>
+                <h3>Find os</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Linker til footer.js i slutningen af body -->
+    <script src="js/footer.js"></script>
 </body>
 </html>
