@@ -61,6 +61,29 @@ footer {
     color: #fff;            /* Bevarer hvid farve på hover */
 }
 
+.social-icons {
+    list-style: none; /* Fjerner prikkerne */
+    display: flex; /* Viser ikonerne på en linje */
+    gap: 10px; /* Tilføjer afstand mellem ikoner */
+    padding: 0; /* Fjerner standard indrykning */
+    margin: 0; /* Fjerner standard margin */
+}
+
+.social-icons li {
+    list-style: none; /* Fjerner prikkerne specifikt for hvert listeelement */
+    padding: 0; /* Fjerner ekstra mellemrum */
+    margin: 0; /* Fjerner ekstra margin */
+}
+
+.social-icons li i {
+    font-size: 40px; /* Juster størrelsen på ikonerne */
+}
+
+.social-icons li:hover {
+    color: #e5e5e5; /* Tilføjer en let hover-effekt */
+}
+
+
 /* Justering af tekst og links på mobil */
 @media (max-width: 767px) {
     .footer-section h3 {
