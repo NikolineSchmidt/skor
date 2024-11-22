@@ -8,19 +8,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header styling */
 header {
     background-color: #7a58e4;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;  /* Øg vertikal padding for at gøre navbaren tykkere */
+    align-items: center; /* Sørger for at logo og menupunkter er centreret vertikalt */
+    padding: 20px 20px; /* Øg vertikal padding for at gøre navbaren tykkere */
     position: relative;
     height: 80px;  /* Øg højden på navbaren */
-}
-
-#nav-check {
-    display: none; /* Skjult på desktop */
 }
 
 /* Logoet til venstre */
@@ -55,6 +52,11 @@ header {
     margin: 5px auto;
 }
 
+/* Fjern checkbox på desktop */
+#nav-check {
+    display: none;
+}
+
 /* Mobile menu */
 .nav-list {
     display: none; /* Skjuler menu på mobil */
@@ -70,7 +72,6 @@ header {
     list-style: none;
     text-align: left; /* Menupunkter står til venstre */
     padding: 20px 15px;
-    /* Fjern border-bottom linjer */
     border-bottom: none;
 }
 
@@ -103,13 +104,13 @@ header {
 
 #nav-check:checked + .nav-title + .nav-btn + .nav-list .booking-item {
     display: block;
-    background-color: #7a58e4; /* Sørger for at knappen matcher menuens farve */
+    background-color: #7a58e4;
 }
 
 /* Vis undermenu når et menupunkt er klikket (mobil) */
 #nav-check:checked + .nav-title + .nav-btn + .nav-list .nav-list-item.active .nav-sub-menu {
     display: block;
-    text-align: center; /* Centrerer undermenuerne */
+    text-align: center;
 }
 
 /* Undermenu vises ved hover på desktop */
@@ -126,15 +127,19 @@ header {
     .nav-list {
         display: flex;
         flex-direction: row;
-        position: static; /* Sørger for at menuen ikke er absolut positioneret */
+        position: static;
+        flex: 1;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .nav-list-item {
         text-align: left;
+        margin-left: 20px;
     }
 
-    .nav-list-item:hover .nav-sub-menu {
-        display: block;
+    .nav-list-item a {
+        padding: 10px 15px;
     }
 
     .nav-sub-menu {
@@ -143,12 +148,42 @@ header {
         left: 0;
         background-color: #7a58e4;
         padding: 0;
-        width: auto;
-        min-width: 200px;
+        width: 100%;
+        min-width: 100%;
+        margin: 0;
+    }
+
+    /* Gør undermenupunkterne større og fed tekst på desktop */
+    .nav-sub-menu a {
+        font-size: 30px; /* Gør teksten større */
+        font-weight: bold; /* Gør teksten fed */
+        padding: 12px 20px; /* Øger padding for større klikbare områder */
+    }
+
+    .nav-sub-menu a:hover {
+        color:#201e4b; 
     }
 
     /* Book nu knappen vises på desktop */
     .booking-item {
         display: block;
+        margin-left: auto;
+    }
+
+    /* Styling til "BOOK NU"-knap */
+    .booking-item a {
+        background-color: #3db180;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover-effekt til knappen */
+    .booking-item a:hover {
+        background-color: #201e4b;
     }
 }
