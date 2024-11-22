@@ -35,8 +35,10 @@ header {
     position: absolute;
     top: 15px;
     right: 20px;
+    z-index: 10; /* Sørg for at menu-knappen er over andre elementer */
 }
 
+/* Standard tre-streg ikon */
 .nav-btn label {
     display: block;
     padding: 10px;
@@ -50,7 +52,26 @@ header {
     height: 4px;
     background-color: white;
     margin: 5px auto;
+    transition: transform 0.3s ease;
 }
+
+/* Når menuen er åben, ændres burgeren til et kryds */
+#nav-check:checked + .nav-title + .nav-btn label span:nth-child(1) {
+    transform: rotate(45deg); /* Første streg roteres */
+    position: relative;
+    top: 7px;
+}
+
+#nav-check:checked + .nav-title + .nav-btn label span:nth-child(2) {
+    opacity: 0; /* Anden streg forsvinder */
+}
+
+#nav-check:checked + .nav-title + .nav-btn label span:nth-child(3) {
+    transform: rotate(-45deg); /* Tredje streg roteres */
+    position: relative;
+    top: -7px;
+}
+
 
 /* Fjern checkbox på desktop */
 #nav-check {
