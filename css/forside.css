@@ -1,0 +1,82 @@
+/* Grundlæggende styling til main (Mobile First) */
+main {
+    display: block;
+    padding: 20px;
+    background-color: #201e4b;
+}
+
+/* Styling til Islandsk Mini Ordbog */
+.dictionary {
+    background-color: #201e4b;
+    padding: 15px;
+    border-radius: 8px;
+    color: #7a58e4;
+    margin-bottom: 20px; /* Gør plads mellem sektionerne */
+}
+
+.dictionary h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.dictionary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dictionary li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Styling til Book en bane */
+.book-section {
+    text-align: center;
+    margin-bottom: 20px; /* Gør plads mellem sektionerne */
+}
+
+.book-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.book-btn {
+    background-color: #7a58e4; /* Farve der står ud */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #3db180; /* Mørkere nuance ved hover */
+}
+
+/* Desktop tilpasning */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Styling til Islandsk Mini Ordbog */
+    .dictionary {
+        width: 45%;
+        margin-bottom: 0; /* Fjern margin-bottom på desktop */
+    }
+
+    /* Styling til Book en bane */
+    .book-section {
+        width: 45%;
+        text-align: center;
+    }
+
+    .book-btn {
+        padding: 12px 25px; /* Større knap på desktop */
+    }
+}

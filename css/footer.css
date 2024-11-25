@@ -95,6 +95,12 @@ footer {
     color: #e5e5e5; /* Tilføjer en let hover-effekt */
 }
 
+.obs {
+    font-size: 0.9em; /* Gør teksten lidt mindre */
+    font-style: italic; /* Giver teksten et let kursiv-look */
+    color: #ccc; /* Gør teksten lidt lysere end resten */
+}
+
 
 /* Justering af tekst og links på mobil */
 @media (max-width: 767px) {
