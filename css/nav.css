@@ -1,3 +1,15 @@
+/* Fjern standardmargener og padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sørg for, at siden fylder hele bredden og højden */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 /* Grundlæggende styling */
 * {
     padding: 0;
@@ -55,6 +67,7 @@ header {
     transition: transform 0.3s ease;
 }
 
+
 /* Når menuen er åben, ændres burgeren til et kryds */
 #nav-check:checked + .nav-title + .nav-btn label span:nth-child(1) {
     transform: rotate(45deg); /* Første streg roteres */
@@ -102,26 +115,26 @@ header {
     display: block;
 }
 
-/* Undermenu */
+/* Skjul undermenu som standard */
 .nav-sub-menu {
-    display: none; /* Skjuler undermenu */
+    display: none;
     background-color: #7a58e4;
     list-style: none;
     padding: 0;
-    margin-left: 20px; /* Flytter undermenuen mod højre */
+    margin-left: 20px;
 }
 
-.nav-sub-menu-item a {
-    color: white;
-    padding: 10px;
+/* Vis undermenu, når den forælder har klassen 'active' */
+.nav-list-item.active .nav-sub-menu {
     display: block;
-    text-decoration: none;
 }
 
-/* Når burger-menuen er åben */
-#nav-check:checked + .nav-title + .nav-btn + .nav-list {
-    display: flex;
+
+/* Når menuen er åben, vis undermenuen ved klik */
+#nav-check:checked + .nav-title + .nav-btn + .nav-list .nav-list-item.active .nav-sub-menu {
+    display: block;
 }
+
 
 #nav-check:checked + .nav-title + .nav-btn + .nav-list .booking-item {
     display: block;
@@ -193,7 +206,7 @@ header {
 
     /* Styling til "BOOK NU"-knap */
     .booking-item a {
-        background-color: #3db180;
+        background-color: #201e4b;
         color: white;
         padding: 10px 20px;
         border-radius: 5px;
@@ -205,6 +218,6 @@ header {
 
     /* Hover-effekt til knappen */
     .booking-item a:hover {
-        background-color: #201e4b;
+        background-color: #3db180;
     }
 }

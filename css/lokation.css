@@ -1,0 +1,82 @@
+/* Grundlæggende styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #201e4b; /* Baggrundsfarve */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fylder hele skærmen vertikalt */
+    margin: 0;
+}
+
+/* Styling for header (SKOR) */
+header {
+    background-color: #7a58e4; 
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Ens padding for header */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 32px; /* Ens fontstørrelse */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Styling for knapper på siden */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px; 
+    margin-top: 120px; 
+}
+
+.location-btn {
+    background-color: #7a58e4;
+    color: #fff;
+    padding: 20px 40px; 
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.location-btn:hover {
+    background-color: #3db180; 
+    transform: scale(1.05); 
+}
+
+/* Media query til desktop */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 60px; /* Ens font-størrelse på desktop */
+    }
+
+    .button-container {
+        flex-direction: row; 
+        gap: 60px; 
+        margin-top: 180px; 
+    }
+
+    .location-btn {
+        padding: 25px 50px; 
+        font-size: 24px; 
+    }
+}

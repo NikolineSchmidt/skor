@@ -1,0 +1,74 @@
+/* Grundlæggende styling - Mobile First */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #201e4b; /* Baggrundsfarve */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fylder hele skærmen vertikalt */
+    margin: 0;
+}
+
+/* Styling for header (SKOR) */
+header {
+    background-color: #7a58e4; /* Farve for header */
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0; /* Ens padding for header */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 32px; /* Ens font-størrelse */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Styling for hovedindholdet */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px; /* Giver plads mellem header og indhold */
+}
+
+.main-content p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Media query til desktop */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 60px; /* Ens font-størrelse på desktop */
+    }
+
+    .main-content {
+        margin-top: 120px; /* Mere plads til top på desktop */
+        padding: 30px;
+    }
+
+    .main-content p {
+        font-size: 24px; /* Større tekst på desktop */
+        padding: 30px;
+    }
+}

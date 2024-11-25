@@ -1,6 +1,18 @@
+/* Fjern standardmargener og padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sørg for, at siden fylder hele bredden og højden */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 /* Footer styles */
 footer {
-    background-color: #3db180;
+    background-color: #201e4b;
     color: #fff;
     padding: 20px 15px;
     text-align: center; /* Standard tekstjustering */
