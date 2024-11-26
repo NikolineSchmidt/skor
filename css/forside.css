@@ -1,94 +1,79 @@
-/* Grundlæggende styling til main (Mobile First) */
+/* Styling til hele main */
 main {
-    display: block;
+    background-color: #201e4b; /* Ensartet baggrundsfarve */
     padding: 20px;
-    background-color: #201e4b;
+    color: #bfc0d4;
+    display: flex; /* Brug flexbox til at placere elementerne horisontalt */
+    flex-direction: column; /* På mobilen vises indholdet vertikalt */
+    text-align: left; /* Justerer tekst til venstre */
 }
 
-/* Styling til Islandsk Mini Ordbog */
-.dictionary {
-    background-color: #201e4b;
-    padding: 20px; /* Øget padding for mere luft */
-    border-radius: 8px;
+/* Overskrift */
+main h1 {
+    font-size: 2.4em;
+    font-family: Arial, sans-serif;
     color: #7a58e4;
-    margin-bottom: 20px; /* Gør plads mellem sektionerne */
-    width: 90%; /* Større sektion på mobil */
-    max-width: 400px; /* Øget maksimal bredde på mobil */
+    margin-bottom: 20px;
+    white-space: normal; /* Tillader overskriften at bryde op på flere linjer */
+    overflow: visible; /* Sørger for, at overskriften ikke bliver skjult */
 }
 
-.dictionary h3 {
-    font-size: 1.6em; /* Øget fontstørrelse på overskrift */
-    margin-bottom: 10px;
+/* Billede */
+main img {
+    width: 100%; /* Gør billedet 100% af bredden (større billede) */
+    height: auto; /* Bevarer proportionerne */
+    object-fit: cover; /* Sørger for at billedet fylder uden at miste proportioner */
+    margin-left: 0; /* Standardmargin til mobilen */
 }
 
-.dictionary ul {
+/* Afsnit */
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 15px 0;
+    max-width: 700px; /* Begræns bredden for bedre læsbarhed */
+}
+
+/* Mini ordbog */
+main h3 {
+    font-size: 1.8em;
+    color: #7a58e4;
+    margin: 30px 0 10px;
+}
+
+main ul {
     list-style-type: none;
     padding: 0;
+    font-size: 1.2em;
+    line-height: 1.8;
 }
 
-.dictionary li {
-    font-size: 1.2em; /* Øget tekststørrelse */
+main li {
     margin-bottom: 10px;
 }
 
-/* Styling til Book en bane */
-.book-section {
-    text-align: center;
-    margin-bottom: 20px; /* Gør plads mellem sektionerne */
-    width: 90%; /* Større sektion på mobil */
-    max-width: 400px; /* Øget maksimal bredde på mobil */
-}
-
-.book-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    max-width: 320px; /* Øget størrelse på billede */
-}
-
-/* Styling til knappen */
-.book-btn {
-    background-color: #7a58e4; /* Farve der står ud */
-    color: white;
-    padding: 12px 25px; /* Større knap */
-    font-size: 1.2em; /* Øget fontstørrelse på knap */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.book-btn:hover {
-    background-color: #3db180; /* Mørkere nuance ved hover */
-}
-
-/* Desktop tilpasning */
+/* Responsiv tilpasning til større skærme (Desktop) */
 @media (min-width: 768px) {
     main {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row; /* På desktop placeres indholdet horisontalt */
+        justify-content: space-between; /* Fordel pladsen mellem tekst og billede */
+        align-items: center; /* Centrer indholdet vertikalt */
     }
 
-    /* Styling til Islandsk Mini Ordbog */
-    .dictionary {
-        width: 45%; /* Større på desktop */
-        max-width: 450px; /* Øget maksimal bredde på desktop */
-        margin-bottom: 0; /* Fjern margin-bottom på desktop */
+    /* Overskrift */
+    main h1 {
+        font-size: 4em; /* Større overskrift til desktop */
+        white-space: nowrap; /* Sørger for, at overskriften ikke bryder op på desktop */
     }
 
-    /* Styling til Book en bane */
-    .book-section {
-        width: 45%; /* Større på desktop */
-        max-width: 450px; /* Øget maksimal bredde på desktop */
+    /* Billede */
+    main img {
+        width: 110%; /* Gør billedet lidt større på desktop */
+        margin-left: -10%; /* Flytter billedet tættere på venstre side på desktop */
     }
 
-    .book-btn {
-        padding: 15px 30px; /* Større knap på desktop */
-        font-size: 1.3em; /* Øget fontstørrelse på desktop */
-    }
-
-    .book-section img {
-        max-width: 350px; /* Øget størrelse på billede på desktop */
+    /* Afsnit */
+    main p {
+        font-size: 1.3em;
     }
 }
