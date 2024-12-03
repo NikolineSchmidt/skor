@@ -1,29 +1,31 @@
 /* Styling til hele main */
 main {
-    background-color: #201e4b; /* Ensartet baggrundsfarve */
+    background-color: #201e4b;
     padding: 20px;
     color: #bfc0d4;
-    display: flex; /* Brug flexbox til at placere elementerne horisontalt */
-    flex-direction: column; /* På mobilen vises indholdet vertikalt */
-    text-align: left; /* Justerer tekst til venstre */
+    display: flex;
+    flex-direction: column; /* På mobile enheder vises indholdet vertikalt */
+    text-align: left;
 }
 
 /* Overskrift */
 main h1 {
     font-size: 2.4em;
+    text-align: center;
     font-family: Arial, sans-serif;
     color: #7a58e4;
     margin-bottom: 20px;
-    white-space: normal; /* Tillader overskriften at bryde op på flere linjer */
-    overflow: visible; /* Sørger for, at overskriften ikke bliver skjult */
+    white-space: normal; 
+    overflow: visible;
 }
 
-/* Billede */
+/* Billede - Standard for alle billeder */
 main img {
-    width: 100%; /* Gør billedet 100% af bredden (større billede) */
-    height: auto; /* Bevarer proportionerne */
-    object-fit: cover; /* Sørger for at billedet fylder uden at miste proportioner */
-    margin-left: 0; /* Standardmargin til mobilen */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 /* Afsnit */
@@ -31,49 +33,35 @@ main p {
     font-size: 1.2em;
     line-height: 1.6;
     margin: 15px 0;
-    max-width: 700px; /* Begræns bredden for bedre læsbarhed */
-}
-
-/* Mini ordbog */
-main h3 {
-    font-size: 1.8em;
-    color: #7a58e4;
-    margin: 30px 0 10px;
-}
-
-main ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.2em;
-    line-height: 1.8;
-}
-
-main li {
-    margin-bottom: 10px;
+    max-width: 700px;
 }
 
 /* Responsiv tilpasning til større skærme (Desktop) */
 @media (min-width: 768px) {
     main {
-        flex-direction: row; /* På desktop placeres indholdet horisontalt */
-        justify-content: space-between; /* Fordel pladsen mellem tekst og billede */
-        align-items: center; /* Centrer indholdet vertikalt */
+        flex-direction: column; /* Indholdet placeres horisontalt */
+        justify-content: flex-start; /* Placerer tekst og billede tættere på hinanden */
+        align-items: center; /* Centrerer elementerne vertikalt */
+        gap: 30px; /* Afstand mellem billede og tekst */
+        padding: 40px; /* Mere plads omkring indholdet */
     }
 
     /* Overskrift */
     main h1 {
-        font-size: 4em; /* Større overskrift til desktop */
-        white-space: nowrap; /* Sørger for, at overskriften ikke bryder op på desktop */
+        font-size: 4em;
+        white-space: nowrap; /* Sørger for at overskriften ikke bryder op */
     }
 
     /* Billede */
-    main img {
-        width: 110%; /* Gør billedet lidt større på desktop */
-        margin-left: -10%; /* Flytter billedet tættere på venstre side på desktop */
+    main img[alt="Islandsk Ordbog"] {
+        width: 45%; /* Gør billedet mindre for at få plads til teksten */
+        margin-top: 0;
+        margin-bottom: 0; /* Fjern margin for at undgå unødvendig afstand */
     }
 
     /* Afsnit */
     main p {
-        font-size: 1.3em;
+        font-size: 20px;
+        max-width: 800px;
     }
 }
