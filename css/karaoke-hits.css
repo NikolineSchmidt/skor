@@ -9,33 +9,28 @@ body {
 
 /* Header */
 header {
-    background-color: #7a57e4; /* Korrekt lilla baggrund */
-    color: #fff;
+    font-size: 2.4em;
+    font-family: Arial, sans-serif;
+    color: #7a58e4;
+    margin-bottom: 20px;
+    white-space: normal; /* Tillader overskriften at bryde op på flere linjer */
+    overflow: visible;
     text-align: center;
-    padding: 30px 0; /* Tilføjer padding for bedre placering */
-    width: 100%; /* Header fylder hele bredden */
-    margin: 0; /* Fjerner margin, så den går ud til kanterne */
-    box-sizing: border-box; /* Sørg for at padding ikke skubber headerens bredde ud af skærmen */
-}
-
-/* Header titel */
-header h1 {
-    margin: 0;
-    font-size: 2em; /* Større fontstørrelse for bedre synlighed */
 }
 
 /* Introduktion */
 .intro {
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
     text-align: center;
+    padding: 20px;
 }
 
 /* Hitliste */
 .hits {
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 600px;
-    padding: 10px;
+    padding: 20px;
     background-color: #7a58e4; /* Lilla baggrund */
     border-radius: 8px;
 }
@@ -50,7 +45,7 @@ header h1 {
 }
 
 .hits a {
-    color: #3db180; /* Grøn accentfarve */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -61,9 +56,9 @@ header h1 {
 
 /* Karaoke-info */
 .karaoke-info {
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-color: #201e4b; /* Mørk baggrund */
     border: 2px solid #3db180; /* Grøn kant */
@@ -89,5 +84,43 @@ header h1 {
 
     .intro, .karaoke-info {
         font-size: 1.2em; /* Gør teksten større på desktop */
+    }
+}
+
+/* Justeringer til mobil (mindre skærme) */
+@media (max-width: 767px) {
+    /* Juster padding for mere luft på mobilen */
+    body {
+        padding: 10px;
+    }
+
+    /* Juster størrelsen af bokse på mobilen */
+    .intro, .hits, .karaoke-info {
+        padding: 10px; /* Mindre padding på mobil for at skabe luft */
+        margin: 20px auto; /* Juster margin for mere luft */
+        max-width: 95%; /* Mindre boks på mobil */
+    }
+
+    /* Gør header mere kompakt og fyld hele bredden */
+    header {
+        padding: 20px 0; /* Mindre header padding på mobil */
+        margin: 0; /* Fjern margin for at fylde hele skærmen */
+        position: relative;
+        left: 0;
+        width: 100vw; /* Bruger 100% af viewport bredden */
+    }
+
+    /* Mindre fontstørrelse for at få plads til indhold */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .intro, .karaoke-info {
+        font-size: 1em; /* Mindre tekst på mobil for bedre plads */
+    }
+
+    /* Gør tekstlinks lettere at klikke på */
+    .hits a {
+        font-size: 1.2em; /* Gør tekstlinkene lidt større */
     }
 }
