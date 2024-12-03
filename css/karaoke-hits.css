@@ -1,0 +1,93 @@
+/* Grundopsætning */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Lys tekstfarve */
+    background-color: #201e4b; /* Mørk baggrundsfarve */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #7a57e4; /* Korrekt lilla baggrund */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Tilføjer padding for bedre placering */
+    width: 100%; /* Header fylder hele bredden */
+    margin: 0; /* Fjerner margin, så den går ud til kanterne */
+    box-sizing: border-box; /* Sørg for at padding ikke skubber headerens bredde ud af skærmen */
+}
+
+/* Header titel */
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Større fontstørrelse for bedre synlighed */
+}
+
+/* Introduktion */
+.intro {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Hitliste */
+.hits {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #7a58e4; /* Lilla baggrund */
+    border-radius: 8px;
+}
+
+.hits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hits li {
+    margin: 10px 0;
+}
+
+.hits a {
+    color: #3db180; /* Grøn accentfarve */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hits a:hover {
+    text-decoration: underline;
+}
+
+/* Karaoke-info */
+.karaoke-info {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+    background-color: #201e4b; /* Mørk baggrund */
+    border: 2px solid #3db180; /* Grøn kant */
+    border-radius: 8px;
+}
+
+.karaoke-info a {
+    color: #3db180;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.karaoke-info a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    /* Større header og padding på desktop */
+    header {
+        padding: 40px 0;
+    }
+
+    .intro, .karaoke-info {
+        font-size: 1.2em; /* Gør teksten større på desktop */
+    }
+}
