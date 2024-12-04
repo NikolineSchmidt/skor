@@ -27,17 +27,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Sørger for at logo og menupunkter er centreret vertikalt */
-    padding: 20px 20px; /* Øg vertikal padding for at gøre navbaren tykkere */
+    padding: 10px 20px; /* Justér padding for at tilpasse indhold */
     position: relative;
-    height: 80px;  /* Øg højden på navbaren */
+    height: 80px; /* Navigationens højde */
 }
 
 /* Logoet til venstre */
 .nav-title .logo {
-    font-size: 24px;
-    font-weight: bold;
     text-decoration: none;
-    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav-title .logo img {
+    height: 40px; /* Justér logoets højde */
+    width: auto; /* Sørger for korrekt proportionering */
+    display: block;
 }
 
 /* Burger menu */
@@ -67,7 +72,6 @@ header {
     transition: transform 0.3s ease;
 }
 
-
 /* Når menuen er åben, ændres burgeren til et kryds */
 #nav-check:checked + .nav-title + .nav-btn label span:nth-child(1) {
     transform: rotate(45deg); /* Første streg roteres */
@@ -85,7 +89,6 @@ header {
     top: -7px;
 }
 
-
 /* Fjern checkbox på desktop */
 #nav-check {
     display: none;
@@ -95,7 +98,7 @@ header {
 .nav-list {
     display: none; /* Skjuler menu på mobil */
     flex-direction: column;
-    width: 100%;  /* Menuen fylder hele skærmen */
+    width: 100%; /* Menuen fylder hele skærmen */
     position: absolute;
     top: 50px; /* Sørger for at menuen ikke overlapper logoet */
     left: 0;
@@ -129,12 +132,10 @@ header {
     display: block;
 }
 
-
 /* Når menuen er åben, vis undermenuen ved klik */
 #nav-check:checked + .nav-title + .nav-btn + .nav-list .nav-list-item.active .nav-sub-menu {
     display: block;
 }
-
 
 #nav-check:checked + .nav-title + .nav-btn + .nav-list .booking-item {
     display: block;

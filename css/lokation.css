@@ -10,30 +10,26 @@ body {
     background-color: #201e4b; /* Baggrundsfarve */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh; /* Fylder hele skærmen vertikalt */
     margin: 0;
 }
 
-/* Styling for header (SKOR) */
+/* Styling for header */
 header {
     background-color: #7a58e4; 
-    color: #fff;
     width: 100%;
-    text-align: center;
-    padding: 20px 0; /* Ens padding for header */
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center; /* Centrerer logoet horisontalt */
+    align-items: center; /* Centrerer logoet vertikalt i headeren */
+    height: 150px; /* Højden på headeren */
+    position: relative;
 }
 
-header h1 {
-    font-size: 32px; /* Ens fontstørrelse */
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0;
+.skor-logo {
+    height: 80px; /* Justér logoets størrelse */
+    width: auto; /* Sørger for korrekte proportioner */
 }
 
 /* Styling for knapper på siden */
@@ -43,16 +39,18 @@ header h1 {
     align-items: center;
     flex-direction: column;
     gap: 40px; 
-    margin-top: 120px; 
+    position: absolute;
+    top: 50%; /* Placér knapperne i midten af siden */
+    transform: translateY(-50%); /* Justér så knapperne er præcist i midten */
 }
 
 .location-btn {
     background-color: #7a58e4;
     color: #fff;
-    padding: 20px 40px; 
-    border-radius: 8px;
+    padding: 30px 60px;  /* Øget padding for større knapper */
+    border-radius: 10px; /* Justeret radius for en rundere knap */
     text-decoration: none;
-    font-size: 50px;
+    font-size: 36px; /* Øget font-størrelse */
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
     display: inline-block;
@@ -65,18 +63,17 @@ header h1 {
 
 /* Media query til desktop */
 @media (min-width: 768px) {
-    header h1 {
-        font-size: 60px; /* Ens font-størrelse på desktop */
-    }
-
     .button-container {
         flex-direction: row; 
         gap: 60px; 
-        margin-top: 180px; 
+        margin-top: 0; /* Fjern margin-top for at holde knapperne centreret */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* Centrer knapperne vertikalt */
     }
 
     .location-btn {
-        padding: 25px 50px; 
-        font-size: 24px; 
+        padding: 35px 70px; /* Øget padding for større knapper på desktop */
+        font-size: 42px; /* Øget font-størrelse på desktop */
     }
 }
