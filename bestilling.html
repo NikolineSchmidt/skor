@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dartbar Booking</title>
+    <link rel="stylesheet" href="/css/bestilling.css">
+    <script src="/js/bestilling.js" defer></script>
+
 </head>
 <body>
-    
+    <header>
+        <h1>Velkommen til Skor</h1>
+        <nav>
+            <a href="#dartbaner">Dartbaner</a>
+            <a href="#karaoke">Karaoke Rum</a>
+            <a href="#gavekort">Gavekort</a>
+            <a href="#firmaarrangementer">Firmaarrangementer</a>
+        </nav>
+    </header>
+
+    <section id="dartbaner">
+        <h2>Book Dartbaner</h2>
+        <form id="dartBookingForm">
+            <label for="date">Vælg dato:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Vælg tid:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="players">Antal spillere:</label>
+            <input type="number" id="players" name="players" min="1" max="10" required>
+            
+            <button type="submit">Book Nu</button>
+        </form>
+    </section>
+
+    <section id="karaoke">
+        <h2>Book Karaoke Rum</h2>
+        <!-- Lignende formular kan indsættes her -->
+    </section>
+
+    <section id="gavekort">
+        <h2>Køb Gavekort</h2>
+        <button>Køb Gavekort</button>
+    </section>
+
+    <section id="firmaarrangementer">
+        <h2>Firmaarrangementer</h2>
+        <p>Kontakt os for en skræddersyet løsning!</p>
+        <form id="eventForm">
+            <label for="company">Firma:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="participants">Antal deltagere:</label>
+            <input type="number" id="participants" name="participants" required>
+
+            <label for="message">Skriv din besked:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Forespørgsel</button>
+        </form>
+    </section>
+
+  
+
+
 </body>
 </html>
