@@ -1,29 +1,29 @@
+"use strict;"
 document.getElementById('dartBookingForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Stopper siden fra at reloade
+    e.preventDefault();
 
-    // Hent brugerens input
-    const date = document.getElementById('date').value;
-    const time = document.getElementById('time').value;
-    const players = document.getElementById('players').value;
+    const dartDate = document.getElementById('dartDate').value;
+    const dartTime = document.getElementById('dartTime').value;
+    const dartDuration = document.getElementById('dartDuration').value;
+    const dartPlayers = document.getElementById('dartPlayers').value;
 
-    // Simpel validering
-    if (date && time && players) {
-        alert(`Du har booket en dartbane den ${date} kl. ${time} for ${players} spillere!`);
+    if (dartDate && dartTime && dartDuration && dartPlayers) {
+        alert(`Du har booket en dartbane den ${dartDate} kl. ${dartTime} for ${dartPlayers} spillere i ${dartDuration} minutter!`);
     } else {
         alert('Udfyld venligst alle felter.');
     }
 });
 
-// Firmaarrangement forespørgsel
-document.getElementById('eventForm').addEventListener('submit', function (e) {
+document.getElementById('karaokeBookingForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const company = document.getElementById('company').value;
-    const participants = document.getElementById('participants').value;
-    const message = document.getElementById('message').value;
+    const karaokeDate = document.getElementById('karaokeDate').value;
+    const karaokeTime = document.getElementById('karaokeTime').value;
+    const karaokeDuration = document.getElementById('karaokeDuration').value;
+    const karaokeParticipants = document.getElementById('karaokeParticipants').value;
 
-    if (company && participants && message) {
-        alert(`Tak for din forespørgsel, ${company}. Vi vender tilbage hurtigst muligt!`);
+    if (karaokeDate && karaokeTime && karaokeDuration && karaokeParticipants) {
+        alert(`Du har booket et karaoke-rum den ${karaokeDate} kl. ${karaokeTime} for ${karaokeParticipants} deltagere i ${karaokeDuration} minutter!`);
     } else {
         alert('Udfyld venligst alle felter.');
     }
