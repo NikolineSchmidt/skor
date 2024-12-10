@@ -42,6 +42,7 @@ header {
 
 .nav-btn label {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -60,19 +61,26 @@ header {
 }
 
 #nav-check:checked ~ .nav-btn label span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg);
+    position: absolute; /* Sørger for, at linjerne overlapper */
+    top: 50%; /* Centrer lodret */
+    left: 50%; /* Centrer vandret */
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 #nav-check:checked ~ .nav-btn label span:nth-child(2) {
-    opacity: 0;
+    opacity: 0; /* Skjuler midterlinjen */
 }
 
 #nav-check:checked ~ .nav-btn label span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-
-/* Når menuen er lukket, gendannes burger-ikonet */
+Når menuen er lukket, gendannes burger-ikonet
 #nav-check:not(:checked) ~ .nav-btn label span:nth-child(1),
 #nav-check:not(:checked) ~ .nav-btn label span:nth-child(3) {
     transform: rotate(0) translate(0, 0);
