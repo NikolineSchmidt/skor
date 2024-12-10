@@ -1,22 +1,15 @@
-/* Fjern standardmargener og padding */
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Sørg for, at siden fylder hele bredden og højden */
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
 /* Grundlæggende styling */
 * {
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* Fjern standardmargener og padding */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -32,131 +25,114 @@ header {
     height: 80px; /* Navigationens højde */
 }
 
-/* Logoet til venstre */
-.nav-title .logo {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
+/* Logo styling */
 .nav-title .logo img {
-    height: 40px; /* Justér logoets højde */
-    width: auto; /* Sørger for korrekt proportionering */
-    display: block;
+    height: 40px;
+    width: auto;
 }
 
-/* Burger menu */
+/* Burger menu button */
 .nav-btn {
-    display: block;
+    display: flex;
     cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 10; /* Sørg for at menu-knappen er over andre elementer */
+    z-index: 10;
 }
 
-/* Standard tre-streg ikon */
 .nav-btn label {
-    display: block;
-    padding: 10px;
-    background-color: #7a58e4;
-    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
 }
 
 .nav-btn label span {
     display: block;
-    width: 30px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background-color: white;
-    margin: 5px auto;
-    transition: transform 0.3s ease;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Når menuen er åben, ændres burgeren til et kryds */
-#nav-check:checked + .nav-title + .nav-btn label span:nth-child(1) {
-    transform: rotate(45deg); /* Første streg roteres */
-    position: relative;
-    top: 7px;
+/* Toggle the burger icon to "X" when active */
+#nav-check:checked ~ .nav-btn label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-#nav-check:checked + .nav-title + .nav-btn label span:nth-child(2) {
-    opacity: 0; /* Anden streg forsvinder */
+#nav-check:checked ~ .nav-btn label span:nth-child(2) {
+    opacity: 0;
 }
 
-#nav-check:checked + .nav-title + .nav-btn label span:nth-child(3) {
-    transform: rotate(-45deg); /* Tredje streg roteres */
-    position: relative;
-    top: -7px;
+#nav-check:checked ~ .nav-btn label span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Fjern checkbox på desktop */
+/* Hide the checkbox */
 #nav-check {
     display: none;
 }
 
-/* Mobile menu */
+/* Navigation menu */
 .nav-list {
-    display: none; /* Skjuler menu på mobil */
+    display: none;
     flex-direction: column;
-    width: 100%; /* Menuen fylder hele skærmen */
     position: absolute;
-    top: 50px; /* Sørger for at menuen ikke overlapper logoet */
+    top: 50px;
     left: 0;
+    width: 100%;
     background-color: #7a58e4;
+    list-style: none;
+    z-index: 9;
+}
+
+/* Show menu when checked */
+#nav-check:checked ~ .nav-list {
+    display: flex;
 }
 
 .nav-list-item {
-    list-style: none;
-    text-align: left; /* Menupunkter står til venstre */
-    padding: 20px 15px;
-    border-bottom: none;
+    padding: 15px 20px;
 }
 
 .nav-list-item a {
-    color: white;
     text-decoration: none;
-    display: block;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-/* Skjul undermenu som standard */
+/* Undermenu styling */
 .nav-sub-menu {
     display: none;
-    background-color: #7a58e4;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 20px;
     list-style: none;
-    padding: 0;
-    margin-left: 20px;
 }
 
-/* Vis undermenu, når den forælder har klassen 'active' */
+.nav-sub-menu-item{
+    padding: 5px 0;
+}
+
+.nav-sub-menu-item a{
+    font-size: 16px;
+}
+
+
 .nav-list-item.active .nav-sub-menu {
-    display: block;
+    display: flex;
 }
 
-/* Når menuen er åben, vis undermenuen ved klik */
-#nav-check:checked + .nav-title + .nav-btn + .nav-list .nav-list-item.active .nav-sub-menu {
-    display: block;
+.nav-sub-menu a {
+    padding: 10px 0;
 }
 
-#nav-check:checked + .nav-title + .nav-btn + .nav-list .booking-item {
-    display: block;
-    background-color: #7a58e4;
-}
-
-/* Vis undermenu når et menupunkt er klikket (mobil) */
-#nav-check:checked + .nav-title + .nav-btn + .nav-list .nav-list-item.active .nav-sub-menu {
-    display: block;
-    text-align: center;
-}
-
-/* Undermenu vises ved hover på desktop */
-.nav-list-item:hover .nav-sub-menu {
-    display: block;
-}
-
-/* Desktop view */
+/* Desktop styles */
 @media (min-width: 768px) {
     .nav-btn {
-        display: none; /* Skjuler burger-menu på desktop */
+        display: none; /* Hide burger menu button on desktop */
     }
 
     .nav-list {
@@ -188,6 +164,10 @@ header {
         margin: 0;
     }
 
+    .nav-list-item:hover .nav-sub-menu {
+        display: flex;
+    }
+
     /* Gør undermenupunkterne større og fed tekst på desktop */
     .nav-sub-menu a {
         font-size: 30px; /* Gør teksten større */
@@ -197,6 +177,10 @@ header {
 
     .nav-sub-menu a:hover {
         color:#201e4b; 
+    }
+
+    .nav-sub-menu-item{
+        padding: 10px;
     }
 
     /* Book nu knappen vises på desktop */

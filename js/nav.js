@@ -9,24 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Toggle 'active' klassen på menupunktet
                 item.classList.toggle("active");
 
-                // Hvis undermenuen er aktiv, vis den, ellers skjul den
-                if (item.classList.contains("active")) {
-                    subMenu.style.display = "block"; // Vis undermenuen
-                } else {
-                    subMenu.style.display = "none"; // Skjul undermenuen
-                }
-            }
-
-            // Luk alle andre undermenuer ved at fjerne 'active' klassen
-            menuItems.forEach((el) => {
-                if (el !== item) {
-                    el.classList.remove("active");
-                    const otherSubMenu = el.querySelector(".nav-sub-menu");
-                    if (otherSubMenu) {
-                        otherSubMenu.style.display = "none"; // Skjul andre undermenuer
+                // Luk alle andre undermenuer ved at fjerne 'active' klassen
+                menuItems.forEach((el) => {
+                    if (el !== item) {
+                        el.classList.remove("active");
                     }
-                }
-            });
+                });
+            }
         });
     });
 });
+
