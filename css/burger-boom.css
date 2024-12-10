@@ -1,0 +1,52 @@
+/* Grundopsætning (Mobile-First) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #201e4b;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    font-size: 1.8em;
+    color: #7a58e4;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.info-burgerboom {
+    background-color: #7a58e4;
+    font-size: 1.5em;
+    margin: 50px;
+    max-width: 95%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling af link i knapperne */
+.btn-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-burger a {
+    background-color: #3db180;
+     border: none;
+     border-radius: 5px;
+     padding: 15px 40px;
+     margin: 5px 40px;
+     color: #fff;
+     font-size: 15px;
+}
