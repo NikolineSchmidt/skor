@@ -56,7 +56,7 @@ header {
 
 /* Styler class pris for at gøre teksten større */
 .pris{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -76,4 +76,8 @@ header {
     color: #3db180;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+   
 }

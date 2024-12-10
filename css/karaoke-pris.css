@@ -31,12 +31,6 @@ header {
     align-items: center; 
 }
 
-/* Styler linket til karaoke hits */
-.info-karaoke a {
-    color: #3db180;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 /* Styling af placeringen i containeren */
 .tider-container {
@@ -77,6 +71,18 @@ header {
     background-color: #201e4b;
     border: 2px solid #3db180;
     border-radius: 8px;
+}
+
+.info-karaoke a {
+    color: #3db180;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-container a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .btn-container {
