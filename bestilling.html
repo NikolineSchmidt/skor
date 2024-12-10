@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dartbar Booking</title>
+    <link rel="stylesheet" href="/css/bestilling.css">
+    <script src="/js/bestilling.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Velkommen til Skor</h1>
+        <nav>
+            <a href="#dartbaner">Dartbaner</a>
+            <a href="#karaoke">Karaoke Rum</a>
+            <a href="#gavekort">Gavekort</a>
+            <a href="#firmaarrangementer">Firmaarrangementer</a>
+        </nav>
+    </header>
+
+    <section id="dartbaner">
+        <h2>Book Dartbaner</h2>
+        <form id="dartBookingForm">
+            <label for="dartDate">Vælg dato:</label>
+            <input type="date" id="dartDate" name="dartDate" required>
+            
+            <label for="dartTime">Vælg tid:</label>
+            <input type="time" id="dartTime" name="dartTime" required>
+            
+            <label for="dartDuration">Varighed:</label>
+            <select id="dartDuration" name="dartDuration" required>
+                <option value="50">50 minutter</option>
+                <option value="80">80 minutter</option>
+            </select>
+            
+            <label for="dartPlayers">Antal spillere:</label>
+            <input type="number" id="dartPlayers" name="dartPlayers" min="1" max="10" required>
+            
+            <button type="submit">Book Nu</button>
+        </form>
+    </section>
+
+    <section id="karaoke">
+        <h2>Book Karaoke Rum</h2>
+        <form id="karaokeBookingForm">
+            <label for="karaokeDate">Vælg dato:</label>
+            <input type="date" id="karaokeDate" name="karaokeDate" required>
+            
+            <label for="karaokeTime">Vælg tid:</label>
+            <input type="time" id="karaokeTime" name="karaokeTime" required>
+            
+            <label for="karaokeDuration">Varighed:</label>
+            <select id="karaokeDuration" name="karaokeDuration" required>
+                <option value="50">50 minutter</option>
+                <option value="80">80 minutter</option>
+            </select>
+            
+            <label for="karaokeParticipants">Antal deltagere:</label>
+            <input type="number" id="karaokeParticipants" name="karaokeParticipants" min="1" max="20" required>
+            
+            <button type="submit">Book Nu</button>
+        </form>
+          
+    </section>
+
+    <section id="gavekort">
+        <h2>Køb Gavekort</h2>
+        <button>Køb Gavekort</button>
+    </section>
+
+    <section id="firmaarrangementer">
+        <h2>Firmaarrangementer</h2>
+        <p>Kontakt os for en skræddersyet løsning!</p>
+        <form id="eventForm">
+            <label for="company">Firma:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="participants">Antal deltagere:</label>
+            <input type="number" id="participants" name="participants" required>
+
+            <label for="message">Skriv din besked:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Forespørgsel</button>
+        </form>
+    </section>
+
+  
+
+
+</body>
+</html>
