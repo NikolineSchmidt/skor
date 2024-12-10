@@ -17,7 +17,6 @@ header {
     padding: 15px 0;
 }
 
-/* Styling af sectionen priser */
 .priser {
     background-color: #7a58e4;
     font-size: 1.5em;
@@ -29,13 +28,6 @@ header {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-}
-
-/* Styler linket til karaoke hits */
-.info-karaoke a {
-    color: #3db180;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* Styling af placeringen i containeren */
@@ -68,8 +60,8 @@ header {
     font-weight: bold;
 }
 
-/* Styling af sectionen info-kareoke */
-.info-karaoke {
+/* Styling af sectionen info-dart */
+.info-dart {
     margin: 50px;
     max-width: 95%;
     padding: 20px;
@@ -79,28 +71,9 @@ header {
     border-radius: 8px;
 }
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.btn-karaoke {
-   background-color: #3db180;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 40px;
-    margin: 5px 40px;
-    color: #fff;
-    font-size: 15px;
-}
-
-
-/* Media Queries (kun for Desktop) */
-@media (min-width: 768px) {
-
-    .btn-karaoke:hover{
-        background-color: #201e4b;
-    }
+/* Styler linket til karaoke hits */
+.info-dart a {
+    color: #3db180;
+    text-decoration: none;
+    font-weight: bold;
 }
