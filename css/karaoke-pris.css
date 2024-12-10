@@ -73,12 +73,14 @@ header {
     border-radius: 8px;
 }
 
+/* Styling af link i infoboks */
 .info-karaoke a {
     color: #3db180;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Styling af link i knapperne */
 .btn-container a {
     color: white;
     text-decoration: none;
