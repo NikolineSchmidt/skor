@@ -21,56 +21,56 @@ header {
 .priser {
     background-color: #7a58e4;
     font-size: 1.5em;
-    margin: 50px;
-    max-width: 95%;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    max-width: 90%; /* Maksimal bredde for at gøre boksen mindre */
 }
 
-
-/* Styling af placeringen i containeren */
+/* Tider-container skal være flex og arrangere tider og priser korrekt */
 .tider-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap:30px; 
+    display: flex;
+    justify-content: space-between; /* Gør så tiderne står ved siden af hinanden */
+    gap: 20px; /* Afstand mellem tiderne */
     margin-top: 10px;
 }
 
-/* Styling af placeringen i containeren */
+/* Styling af tiderne og priserne */
 .tidlig, .sent {
-    flex: 1; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    padding: 40px; 
-    text-align: center; 
+    flex: 1;
+    text-align: center;
 }
 
+/* Styling af tekst og priser */
 .tidlig p, .sent p {
     margin: 10px 0;
+    font-size: 1.1em; /* Justerer fontstørrelsen */
     line-height: 1.7;
 }
 
-/* Styler class pris for at gøre teksten større */
-.pris{
+/* Styler class pris for at gøre teksten større og fed */
+.pris {
     font-size: 2em;
     font-weight: bold;
 }
 
-/* Styling af sectionen info-kareoke */
+/* Styling af info-karaoke */
 .info-karaoke {
-    margin: 50px;
-    max-width: 95%;
-    padding: 20px;
-    text-align: center;
     background-color: #201e4b;
     border: 2px solid #3db180;
     border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto; /* Centrerer boksene */
+    max-width: 90%; /* Maksimal bredde for at gøre boksen mindre */
+}
+
+/* Ensartet styling af teksten i info-karaoke */
+.info-karaoke p {
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
 /* Styling af link i infoboks */
@@ -80,35 +80,48 @@ header {
     font-weight: bold;
 }
 
-/* Styling af link i knapperne */
-.btn-container a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Styling af knapperne */
 .btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .btn-karaoke {
-   background-color: #3db180;
+    background-color: #3db180; /* Grøn baggrund */
     border: none;
     border-radius: 5px;
     padding: 15px 40px;
-    margin: 5px 40px;
-    color: #fff;
+    margin: 5px 20px;
+    color: #fff; /* Hvid tekst */
     font-size: 15px;
+    text-decoration: none; /* Fjerner understregning */
+    font-weight: bold; /* Gør teksten fed */
+    display: inline-block; /* Sikrer at knappen opfører sig som en blok */
+}
+
+/* Gør linket hvidt i knapperne */
+.btn-karaoke a {
+    color: #fff; /* Hvid tekst i linket */
+    text-decoration: none; /* Fjerner understregning i linket */
 }
 
 
-/* Media Queries (kun for Desktop) */
+/* Gør priser og info-karaoke til flex-bokse på større skærme */
 @media (min-width: 768px) {
+    /* Sørg for, at priser og info-karaoke deler pladsen ligeligt */
+    .content-container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
 
-    .btn-karaoke:hover{
-        background-color: #201e4b;
+    .priser, .info-karaoke {
+        flex: 1;
+        max-width: 48%; /* Bredde til at få dem til at stå side om side */
+    }
+
+    .btn-karaoke:hover {
+        background-color: #201e4b; 
     }
 }
