@@ -101,15 +101,28 @@ header {
 }
 
 
+/* Laver flex-bokse på større skærme */
 @media (min-width: 768px) {
     
     .content-priser {
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         gap: 50px; 
+        padding: 0 20px; /* Plads på venstre og højre side */
     }
- 
-    .priser {
-        width: 100%;
+
+    .content-55, .content-80 {
+        flex: 1; /* Sørger for, at boksene deler pladsen ligeligt */
+        max-width: 48%; /* Begrænser boksens bredde, så der er plads til begge */
     }
+
+/* Styler info-dart så den fylder det samme som content-priser */
+    content-priser, .info-dart {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+    
 }
