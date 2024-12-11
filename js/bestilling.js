@@ -6,9 +6,11 @@ document.getElementById('dartBookingForm').addEventListener('submit', function (
     const dartTime = document.getElementById('dartTime').value;
     const dartDuration = document.getElementById('dartDuration').value;
     const dartPlayers = document.getElementById('dartPlayers').value;
+    const dartName = document.getElementById('dartName').value;
+    const dartContact = document.getElementById('dartContact').value;
 
-    if (dartDate && dartTime && dartDuration && dartPlayers) {
-        alert(`Du har booket en dartbane den ${dartDate} kl. ${dartTime} for ${dartPlayers} spillere i ${dartDuration} minutter!`);
+    if (dartDate && dartTime && dartDuration && dartPlayers && dartName && dartContact) {
+        alert(`Tak, ${dartName}! Du har booket en dartbane den ${dartDate} kl. ${dartTime} for ${dartPlayers} spillere i ${dartDuration} minutter. Vi kontakter dig på ${dartContact}.`);
     } else {
         alert('Udfyld venligst alle felter.');
     }
@@ -21,13 +23,16 @@ document.getElementById('karaokeBookingForm').addEventListener('submit', functio
     const karaokeTime = document.getElementById('karaokeTime').value;
     const karaokeDuration = document.getElementById('karaokeDuration').value;
     const karaokeParticipants = document.getElementById('karaokeParticipants').value;
+    const karaokeName = document.getElementById('karaokeName').value;
+    const karaokeContact = document.getElementById('karaokeContact').value;
 
-    if (karaokeDate && karaokeTime && karaokeDuration && karaokeParticipants) {
-        alert(`Du har booket et karaoke-rum den ${karaokeDate} kl. ${karaokeTime} for ${karaokeParticipants} deltagere i ${karaokeDuration} minutter!`);
+    if (karaokeDate && karaokeTime && karaokeDuration && karaokeParticipants && karaokeName && karaokeContact) {
+        alert(`Tak, ${karaokeName}! Du har booket et karaoke-rum den ${karaokeDate} kl. ${karaokeTime} for ${karaokeParticipants} deltagere i ${karaokeDuration} minutter. Vi kontakter dig på ${karaokeContact}.`);
     } else {
         alert('Udfyld venligst alle felter.');
     }
 });
+
 
 function updateTimeOptions(timeSelectId, dateInputId) {
     const timeSelect = document.getElementById(timeSelectId);
@@ -74,3 +79,25 @@ function createOption(hour, minute) {
     option.textContent = `${formattedHour}:${minute}`;
     return option;
 }
+
+
+// bestilling af gavekort
+
+document.getElementById('giftCardForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Forhindrer standardformularindsendelse
+
+    // Hent brugernes input
+    const giftCardAmount = document.getElementById('giftCardAmount').value;
+    const customerName = document.getElementById('customerName').value;
+    const customerEmail = document.getElementById('customerEmail').value;
+    const paymentMethod = document.getElementById('paymentMethod').value;
+
+    // Bekræftelse og logning af data (kan erstattes med API-kald til betalingsgateway)
+    alert(`Takket for din bestilling! \n
+    Beløb: DKK ${giftCardAmount} \n
+    Kunde: ${customerName} \n
+    E-mail: ${customerEmail} \n
+    Betalingsmetode: ${paymentMethod}`);
+
+    // Tilføj integration med betalingssystem her (Stripe, PayPal osv.)
+});
