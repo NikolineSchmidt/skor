@@ -1,0 +1,134 @@
+/* Grundlæggende styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #201e4b;
+    color: #7a58e4;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Container for flip cards */
+.flip-container {
+    display: flex;
+    flex-direction: column; /* Ændret til kolonne-layout */
+    align-items: center; /* Centrerer kortene */
+    gap: 30px; /* Øget afstanden mellem kortene */
+}
+
+/* Individuelle flip kort */
+.flip-card {
+    width: 100%; /* Ændret til at fylde hele containeren */
+    max-width: 500px; /* Øget maksimal bredde */
+    height: 350px; /* Lavere højde på kortene */
+    perspective: 1000px; /* Giver mulighed for 3D-effekt */
+}
+
+/* Flip kortets indre */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Ved hover over kortet, rotere det */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Fronten af kortet */
+.flip-card-front {
+    background-color: #7a58e4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Justeret fra center til flex-start for at rykke billedet op */
+    padding: 10px;
+    text-align: center;
+    height: 100%; /* Sørger for, at højden på kortet er konsekvent */
+}
+
+/* Billedet på fronten af kortet */
+.flip-card-front img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /* Sikrer at billedet fylder pladsen uden at blive forvrænget */
+    border-radius: 10px;
+}
+
+/* Positionering af teksten */
+.flip-card-front p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6); /* Giver teksten bedre kontrast mod billedet */
+}
+
+/* Bagsiden af kortet */
+.flip-card-back {
+    background-color: #7a58e4;
+    color: #fff;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    padding: 20px;
+    font-size: 1rem;
+    overflow-y: auto;
+}
+
+/* Styling af titlerne */
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #7a58e4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Responsivitet - Gør layoutet ens på desktop og mobil */
+@media (max-width: 768px) {
+    .flip-container {
+        flex-direction: column; /* Ens layout på mobil */
+        align-items: center; /* Centrerer kortene på mobil */
+    }
+
+    .flip-card {
+        width: 100%; /* Fylder hele bredden på mobil */
+        max-width: 90%; /* Gør kortene lidt bredere på mobil */
+        height: 350px; /* Samme lavere højde på mobil */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
