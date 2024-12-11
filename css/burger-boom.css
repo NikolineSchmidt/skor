@@ -17,6 +17,14 @@ header {
     padding: 15px 0;
 }
 
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .info-burgerboom {
     background-color: #7a58e4;
     font-size: 1.5em;
@@ -29,11 +37,19 @@ header {
     flex-direction: column; 
 }
 
-.btn-container {
+.burger-historie {
+    background-color: #c6e7a3;
+    color: #201e4b;
+    font: size 1.5em;
+    margin: 50px;
+    max-width: 95%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
 }
+
 /* Styling af link i knapperne */
 .btn-container a {
     color: white;
@@ -41,12 +57,28 @@ header {
     font-weight: bold;
 }
 
-.btn-burger a {
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-burgerboom {
     background-color: #3db180;
-     border: none;
-     border-radius: 5px;
-     padding: 15px 40px;
-     margin: 5px 40px;
-     color: #fff;
-     font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    margin: 5px 40px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn-burger {
+    background-color: #3db180;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    margin: 5px 40px;
+    color: #fff;
+    font-size: 15px;
 }
