@@ -25,7 +25,7 @@
             <label for="dartDate">Vælg dato:</label>
             <input type="date" id="dartDate" name="dartDate" required onchange="updateTimeOptions('dartTime', 'dartDate')" required>
             
-            <label for="dartTime">Vælg tid:</label>
+            <label for="dartTime">Ankomst:</label>
             <select id="dartTime" name="dartTime" required>
                 <option value="15:00">15:00</option>
                 <option value="15:30">15:30</option>
@@ -59,6 +59,13 @@
             <label for="dartPlayers">Antal spillere:</label>
             <input type="number" id="dartPlayers" name="dartPlayers" min="1" max="10" required>
             
+            <label for="dartName">Dit navn:</label>
+            <input type="text" id="dartName" name="dartName" required>
+    
+            <label for="dartContact">Kontaktinformation (e-mail/telefon):</label>
+            <input type="text" id="dartContact" name="dartContact" required>
+
+
             <button type="submit">Book Nu</button>
         </form>
     </section>
@@ -69,7 +76,7 @@
             <label for="karaokeDate">Vælg dato:</label>
             <input type="date" id="karaokeDate" name="karaokeDate" required>
             
-            <label for="karaokeTime">Vælg tid:</label>
+            <label for="karaokeTime">Ankomst:</label>
             <select id="karaokeTime" name="karaokeTime" required>
                 <option value="15:00">15:00</option>
                 <option value="15:30">15:30</option>
@@ -102,6 +109,13 @@
             
             <label for="karaokeParticipants">Antal deltagere:</label>
             <input type="number" id="karaokeParticipants" name="karaokeParticipants" min="1" max="20" required>
+
+
+        <label for="karaokeName">Dit navn:</label>
+        <input type="text" id="karaokeName" name="karaokeName" required>
+
+        <label for="karaokeContact">Kontaktinformation (e-mail/telefon):</label>
+        <input type="text" id="karaokeContact" name="karaokeContact" required>
             
             <button type="submit">Book Nu</button>
         </form>

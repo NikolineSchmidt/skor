@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #7a58e4;
+    background-color: #201e4b;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -28,14 +28,28 @@ img {
 a {
     margin-top: 20px;
     font-size: 1rem;
-    color: #00bcd4;
+    color: white;
     text-decoration: none;
-    border: 1px solid #00bcd4;
+    border: 1px solid #7a58e4;
+    background-color: #7a58e4;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 a:hover {
-    background-color: #00bcd4;
-    color: #222;
+    background-color: #7a58e4;
+    color: white;
+}
+
+@keyframes hop {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#dart-image {
+    animation: hop 1s ease-in-out infinite;
 }
