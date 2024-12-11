@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #201e4b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7a58e4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Stil for information boxene */
+.info-box {
+    background-color: #7a58e4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: white;
+}
+
+li {
+    margin-bottom: 10px;
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #7a58e4;
+    color: white;
+    margin-top: 20px;
+}

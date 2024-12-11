@@ -79,3 +79,25 @@ function createOption(hour, minute) {
     option.textContent = `${formattedHour}:${minute}`;
     return option;
 }
+
+
+// bestilling af gavekort
+
+document.getElementById('giftCardForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Forhindrer standardformularindsendelse
+
+    // Hent brugernes input
+    const giftCardAmount = document.getElementById('giftCardAmount').value;
+    const customerName = document.getElementById('customerName').value;
+    const customerEmail = document.getElementById('customerEmail').value;
+    const paymentMethod = document.getElementById('paymentMethod').value;
+
+    // Bekræftelse og logning af data (kan erstattes med API-kald til betalingsgateway)
+    alert(`Takket for din bestilling! \n
+    Beløb: DKK ${giftCardAmount} \n
+    Kunde: ${customerName} \n
+    E-mail: ${customerEmail} \n
+    Betalingsmetode: ${paymentMethod}`);
+
+    // Tilføj integration med betalingssystem her (Stripe, PayPal osv.)
+});
