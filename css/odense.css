@@ -16,17 +16,42 @@ body {
     margin: 0;
 }
 
-/* Styling for header (SKOR) */
+/* Header styling */
 header {
-    background-color: #7a58e4; /* Farve for header */
-    color: #fff;
+    background-color: #7a58e4; /* Baggrundsfarve for header */
     width: 100%;
-    text-align: center;
-    padding: 20px 0; /* Ens padding for header */
+    padding: 20px 0;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Placerer elementerne vertikalt */
+    align-items: center;
+}
+
+.logo-container img {
+    height: 60px; /* Justér størrelsen på logoet */
+    width: auto; /* Bevarer proportionerne */
+    margin-bottom: 10px; /* Giver afstand mellem logo og tekst */
+}
+
+.logo-container span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
 
 header h1 {
     font-size: 32px; /* Ens font-størrelse */
