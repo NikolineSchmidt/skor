@@ -2,10 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #201e4b;
 }
 
 header {
-    background-color: #333;
+    background-color: #7a58e4; ;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -25,9 +26,10 @@ section {
     padding: 2rem;
     margin: 1rem auto;
     max-width: 800px;
-    border: 1px solid #ddd;
+    border: 1px solid #201e4b;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #201e4b;
+    color: white;
 }
 
 form {
@@ -48,12 +50,48 @@ input, textarea, button {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #7a58e4;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #7a58e4;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    form {
+        gap: 0.75rem;
+    }
+
+    input, textarea, select, button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav {
+        gap: 0.25rem;
+    }
+
+    section {
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
 }
