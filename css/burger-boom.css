@@ -9,7 +9,7 @@ body {
 }
 
 /* Header */
-header {
+main {
     font-size: 1.8em;
     color: #7a58e4;
     margin-bottom: 20px;
@@ -18,7 +18,7 @@ header {
 }
 
 
-header img {
+main img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -38,14 +38,14 @@ header img {
 }
 
 .burger-historie {
-    background-color: #c6e7a3;
+    background-color: white;
     color: #201e4b;
     font: size 1.5em;
     margin: 50px;
     max-width: 95%;
     padding: 20px;
     border-radius: 8px;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column; 
 }
@@ -64,7 +64,7 @@ header img {
 }
 
 .btn-burgerboom {
-    background-color: #3db180;
+    background-color: #7a58e4;
     border: none;
     border-radius: 5px;
     padding: 15px 40px;
