@@ -6,16 +6,16 @@ document.getElementById('dartBookingForm').addEventListener('submit', function (
     const dartTime = document.getElementById('dartTime').value;
     const dartDuration = document.getElementById('dartDuration').value;
     const dartPlayers = document.getElementById('dartPlayers').value;
+    const dartLanes = document.getElementById('dartLanes').value;
     const dartName = document.getElementById('dartName').value;
     const dartContact = document.getElementById('dartContact').value;
 
-    if (dartDate && dartTime && dartDuration && dartPlayers && dartName && dartContact) {
-        alert(`Tak, ${dartName}! Du har booket en dartbane den ${dartDate} kl. ${dartTime} for ${dartPlayers} spillere i ${dartDuration} minutter. Vi kontakter dig på ${dartContact}.`);
+    if (dartDate && dartTime && dartDuration && dartPlayers && dartLanes && dartName && dartContact) {
+        alert(`Tak, ${dartName}! Du har booket ${dartLanes} dartbane(r) den ${dartDate} kl. ${dartTime} for ${dartPlayers} spillere i ${dartDuration} minutter. Vi kontakter dig på ${dartContact}.`);
     } else {
         alert('Udfyld venligst alle felter.');
     }
 });
-
 document.getElementById('karaokeBookingForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
