@@ -1,0 +1,164 @@
+/* Grundlæggende styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #201e4b;
+    color: #7a58e4;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+/* Container for flip cards */
+.flip-container {
+    display: flex;
+    flex-direction: column; /* Ændret til kolonne-layout */
+    align-items: center; /* Centrerer kortene */
+    gap: 30px; /* Øget afstanden mellem kortene */
+}
+
+/* Individuelle flip kort */
+.flip-card {
+    width: 100%; /* Ændret til at fylde hele containeren */
+    max-width: 500px; /* Øget maksimal bredde */
+    height: 350px; /* Lavere højde på kortene */
+    perspective: 1000px; /* Giver mulighed for 3D-effekt */
+}
+
+/* Flip kortets indre */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Ved hover over kortet, rotere det */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Fronten af kortet */
+.flip-card-front {
+    background-color: #7a58e4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Justeret fra center til flex-start for at rykke billedet op */
+    padding: 10px;
+    text-align: center;
+    height: 100%; /* Sørger for, at højden på kortet er konsekvent */
+}
+
+/* Billedet på fronten af kortet */
+.flip-card-front img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /* Sikrer at billedet fylder pladsen uden at blive forvrænget */
+    border-radius: 10px;
+}
+
+.flip-card-front p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centrerer teksten horisontalt */
+    color: #201e4b; /* Tekstfarve */
+    padding: 5px 10px; /* Giver lidt plads omkring teksten */
+    border-radius: 5px; /* Tilføjer afrundede hjørner, hvis relevant */
+    white-space: normal; /* Tillader tekstombrydning */
+    word-wrap: break-word; /* Bryder ord, hvis de er for lange */
+    overflow: visible; /* Lader teksten vises fuldt ud */
+    font-size: 17px;
+}
+
+
+.flip-card-back {
+    background-color: #7a58e4; /* Baggrundsfarve */
+    color: #ffffff; /* Tekstfarve */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Justerer indhold i en kolonne */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Tilføj plads omkring teksten */
+    backface-visibility: hidden;
+    transform: rotateY(180deg); /* Bagsidens rotation */
+    overflow-y: auto; /* Giver scroll, hvis teksten er for lang */
+}
+
+.flip-card-back ul {
+    list-style: disc; /* Punkter foran teksten */
+    padding-left: 20px; /* Indrykning for lister */
+    margin: 0;
+    line-height: 1.5; /* Gør teksten mere luftig */
+    text-align: left; /* Venstrestillet tekst for bedre læsning */
+}
+
+.flip-card-back li {
+    margin-bottom: 10px; /* Plads mellem punkter */
+}
+
+/* Styling af titlerne */
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #7a58e4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.flip-container {
+    display: flex;
+    flex-direction: column; /* Ændret til kolonne-layout */
+    align-items: center; /* Centrerer kortene */
+    gap: 80px; /* Øget afstanden mellem kortene */
+    padding-top: 10px; /* Øger afstanden fra toppen */
+}
+
+/* Responsivitet - Gør layoutet ens på desktop og mobil */
+@media (max-width: 768px) {
+    .flip-container {
+        flex-direction: column; /* Ens layout på mobil */
+        align-items: center; /* Centrerer kortene på mobil */
+    }
+
+    .flip-card {
+        width: 100%; /* Fylder hele bredden på mobil */
+        max-width: 90%; /* Gør kortene lidt bredere på mobil */
+        height: 350px; /* Samme lavere højde på mobil */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

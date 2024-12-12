@@ -17,48 +17,44 @@ header {
     padding: 15px 0;
 }
 
+/* Styling af sectionen priser */
 .priser {
     background-color: #7a58e4;
     font-size: 1.5em;
-    margin: 50px;
-    max-width: 95%;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    max-width: 90%; /* Maksimal bredde for at gøre boksen mindre */
 }
 
-/* Styling af placeringen i containeren */
+/* Tider-container skal være flex og arrangere tider og priser korrekt */
 .tider-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap:30px; 
+    display: flex;
+    justify-content: space-between; /* Gør så tiderne står ved siden af hinanden */
+    gap: 20px; /* Afstand mellem tiderne */
     margin-top: 10px;
 }
 
-/* Styling af placeringen i containeren */
+/* Styling af tiderne og priserne */
 .tidlig, .sent {
-    flex: 1; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    padding: 40px; 
-    text-align: center; 
+    flex: 1;
+    text-align: center;
 }
 
+/* Styling af tekst og priser */
 .tidlig p, .sent p {
     margin: 10px 0;
+    font-size: 1.1em; /* Justerer fontstørrelsen */
     line-height: 1.7;
 }
 
-/* Styler class pris for at gøre teksten større */
-.pris{
-    font-size: 1.5em;
+/* Styler class pris for at gøre teksten større og fed */
+.pris {
+    font-size: 2em;
     font-weight: bold;
 }
+
 
 /* Styling af sectionen info-dart */
 .info-dart {
@@ -71,19 +67,15 @@ header {
     border-radius: 8px;
 }
 
-/* Styler linket til karaoke hits */
-.info-dart a {
-    color: #3db180;
-    text-decoration: none;
-    font-weight: bold;
+/* Ensartet styling af teksten i info-dart */
+.info-dart p {
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
-
-/* Styling af link i knapperne */
-.btn-container a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.info-dart a {
+    color: #3db180; /* Ændr til den ønskede farve */
+    text-decoration: none; /* Fjerner understregning (valgfrit) */
 }
 
 .btn-container {
@@ -102,16 +94,35 @@ header {
      font-size: 15px;
  }
 
+ /* Gør linket hvidt i knapperne */
+.btn-dart a {
+    color: #fff; /* Hvid tekst i linket */
+    text-decoration: none; /* Fjerner understregning i linket */
+}
+
+
+/* Laver flex-bokse på større skærme */
 @media (min-width: 768px) {
     
     .content-priser {
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         gap: 50px; 
-    }
- 
-    .priser {
-        width: 100%;
+        padding: 0 20px; /* Plads på venstre og højre side */
     }
 
+    .content-55, .content-80 {
+        flex: 1; /* Sørger for, at boksene deler pladsen ligeligt */
+        max-width: 48%; /* Begrænser boksens bredde, så der er plads til begge */
+    }
+
+/* Styler info-dart så den fylder det samme som content-priser */
+    content-priser, .info-dart {
+        max-width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+    
 }
