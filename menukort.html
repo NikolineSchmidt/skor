@@ -4,67 +4,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/menukort.css">
     <title>Menukort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu" />
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <div class="background">
-        <div class="whole-menu">
-            <header class="header">
-                <div class="logo quick-logo">DRINKS</div>
-                <div class="logo eats-logo">KORT</div>
-            </header>
-            <!-- Flyt "PÅ FLASKE" op -->
-            <div class="container bar-container bottled-menu">
-                <h2 class="bar-title-bottled">PÅ FLASKE</h2>
-                <div class="items right-spacer">
-                    <p><span>Flaske og øldåse</span> <span class="price">55</span></p>
-                    <p><span>Brezzer</span> <span class="price">50</span></p>
-                </div>
+
+    <header>
+        <nav class="nav-title">
+            <a href="aarhus.html" class="logo">
+                <img src="img/skor-logo.webp" alt="Skor logo">
+            </a>
+        </nav>
+        <input type="checkbox" id="nav-check">
+        <nav class="nav-btn">
+            <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </nav>  
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="#">DART</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#dart">BOOK EN BANE</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-regler.html">REGLER</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-pris.html">PRISER FOR DARTBANER</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">KARAOKE</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#karaoke">BOOK VORES RUM</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-hits.html">TOP KARAOKE-HITS</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-pris.html">PRISER FOR KARAOKE</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">ARRANGEMENTER</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="404.html">TIRSDAGTURNERING</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">FIRMAFEST</a></li>
+                    <li class="nav-sub-menu-item"><a href="burger-boom.html">STØRRE GRUPPER</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">KOMMENDE EVENTS</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="menukort.html">MENUKORT</a>
+
+            </li>
+            <li class="nav-list-item">
+                <a href="#">OM SKOR</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="aarhus.html#footer-container">KONTAKT OS</a></li>
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#gavekort">GAVEKORT</a></li>
+                    <li class="nav-sub-menu-item"><a href="praktisk-info.html">PRATISK INFO</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item booking-item">
+                <a href="bestilling.html">BOOK NU</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="menu-wrapper">
+        <div class="logo-container">
+            <div class="logo drinks-logo">DRINKS</div>
+            <div class="logo eats-logo">KORT</div>
+        </div>
+    
+        <div class="menu-section bottled-menu">
+            <h2 class="section-title">PÅ FLASKE</h2>
+            <div class="menu-items">
+                <p><span>Flaske og øldåse</span> <span class="price">55</span></p>
+                <p><span>Brezzer</span> <span class="price">50</span></p>
             </div>
-            <!-- Resten af menuen -->
-            <div class="container bar-container draft-menu">
-                <h2 class="bar-title-draft">PÅ FAD</h2>
-                <div class="items left-spacer">
-                    <p><span>Carlsberg</span> <span class="price">50</span></p>
-                    <p><span>Tuborg Classic</span> <span class="price">55</span></p>
-                    <p><span>1664 BLANC</span> <span class="price">60</span></p>
-                    <p><span>Yakima</span> <span class="price">60</span></p>
-                    <p><span>Brooklyn Pulp Art</span> <span class="price">60</span></p>
-                    <p><span>BlueTail Cocktail</span> <span class="price">75</span></p>
-                    <p><span>Sommersby</span> <span class="price">50</span></p>
-                </div>
+        </div>
+    
+        <div class="menu-section draft-menu">
+            <h2 class="section-title">PÅ FAD</h2>
+            <div class="menu-items">
+                <p><span>Carlsberg</span> <span class="price">50</span></p>
+                <p><span>Tuborg Classic</span> <span class="price">55</span></p>
+                <p><span>1664 BLANC</span> <span class="price">60</span></p>
+                <p><span>Yakima</span> <span class="price">60</span></p>
+                <p><span>Brooklyn Pulp Art</span> <span class="price">60</span></p>
+                <p><span>BlueTail Cocktail</span> <span class="price">75</span></p>
+                <p><span>Sommersby</span> <span class="price">50</span></p>
             </div>
-            <div class="container right-spacer filled-container cocktails-menu">
-                <h2 class="round-titles" id="cocktails">COCKTAILS</h2>
-                <div class="items filled-items">
-                    <p><span>Vodka Redbull</span> <span class="price">75</span></p>
-                    <p><span>Bluetail på fad</span> <span class="price">75</span></p>
-                    <p><span>Gin & Tonic</span> <span class="price">75</span></p>
-                    <p><span>Moscow Mule</span> <span class="price">75</span></p>
-                    <p><span>Mango Tango</span> <span class="price">75</span></p>
-                    <p><span>Vodka Soda</span> <span class="price">75</span></p>
-                    <p><span>Gin Hass</span> <span class="price">75</span></p>
-                    <p><span>Astronaut</span> <span class="price">75</span></p>
-                    <p><span>Københavnerstang</span> <span class="price">75</span></p>
-                    <p><span>Lolly Lemonade</span> <span class="price">75</span></p>
-                    <p><span>Rum + Cola</span> <span class="price">75</span></p>
-                </div>
+        </div>
+    
+        <div class="menu-section cocktails-menu">
+            <h2 class="section-title">COCKTAILS</h2>
+            <div class="menu-items">
+                <p><span>Vodka Redbull</span> <span class="price">75</span></p>
+                <p><span>Bluetail på fad</span> <span class="price">75</span></p>
+                <p><span>Gin & Tonic</span> <span class="price">75</span></p>
+                <p><span>Moscow Mule</span> <span class="price">75</span></p>
+                <p><span>Mango Tango</span> <span class="price">75</span></p>
+                <p><span>Vodka Soda</span> <span class="price">75</span></p>
+                <p><span>Gin Hass</span> <span class="price">75</span></p>
+                <p><span>Astronaut</span> <span class="price">75</span></p>
+                <p><span>Københavnerstang</span> <span class="price">75</span></p>
+                <p><span>Lolly Lemonade</span> <span class="price">75</span></p>
+                <p><span>Rum + Cola</span> <span class="price">75</span></p>
             </div>
-            <div class="container bar-container bottled-menu">
-                <h2 class="bar-title-draft">KANDE 2L</h2>
-                <div class="items right-spacer">
-                    <p><span>Carlsberg + Tuborg</span> <span class="price">200</span></p>
-                    <p><span>Resten af øl</span> <span class="price">225</span></p>
-                </div>
+        </div>
+    
+        <div class="menu-section pitchers-menu">
+            <h2 class="section-title">KANDE 2L</h2>
+            <div class="menu-items">
+                <p><span>Carlsberg + Tuborg</span> <span class="price">200</span></p>
+                <p><span>Resten af øl</span> <span class="price">225</span></p>
             </div>
-            <div class="container bar-container bottled-menu">
-                <div class="items">
-                    <p><span>Bluetail</span> <span class="price">300</span></p>
-                    <p><span>Drinks</span> <span class="price">325</span></p>
-                    <p><span>Sommersby</span> <span class="price">250</span></p>
-                </div>
-                <h2 class="bar-title-bottled">KANDE 1.5L</h2>
+        </div>
+    
+        <div class="menu-section drinks-menu">
+            <h2 class="section-title">KANDE 1.5L</h2>
+            <div class="menu-items">
+                <p><span>Bluetail</span> <span class="price">300</span></p>
+                <p><span>Drinks</span> <span class="price">325</span></p>
+                <p><span>Sommersby</span> <span class="price">250</span></p>
             </div>
         </div>
     </div>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Kontakt -->
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Telefontorvet 10, Aarhus</p>
+                <p><a href="mailto:skorbar@skorbar.dk">skorbar@skorbar.dk</a> <span class="obs">(Vi svarer inden for 2 hverdage)</span></p>
+                <p>Telefon: <a href="tel:41221180">+45 41 22 11 80</a> <span class="obs">(OBS: Vi besvarer kun opkald i åbningstiden og ikke, når vi har travlt)</span></p>
+                <div id="map"></div>
+            </div>
+            <!-- Åbningstider -->
+            <div class="footer-section">
+                <h3>Åbningstider</h3>
+                <p>Mandag: 15:00-22:00</p>
+                <p>Tirsdag: 15:00-22:00</p>
+                <p>Onsdag: 15:00-23:00</p>
+                <p>Torsdag: 15:00-00:00</p>
+                <p>Fredag: 13:00-02:00</p>
+                <p>Lørdag: 13:00-02:00</p>
+                <p>Søndag: 13:00-22:00</p>
+            </div>
+            <!-- Hvor finder jeg? -->
+            <div class="footer-section">
+                <h3>Hvor finder jeg</h3>
+                <p><a href="menukort.html">Menukort</a></p>
+                <p><a href="bestilling.html">Booking</a></p>
+                <h3>Find os</h3>
+                <ul class="social-icons">
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-square-facebook"></i></li>
+                </ul>            
+            </div>
+        </div>
+    </footer>    
+
+    <!-- Linker til js i slutningen af body -->
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

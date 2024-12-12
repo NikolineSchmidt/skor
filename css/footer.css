@@ -33,6 +33,7 @@ footer {
 }
 
 .footer-section h3 {
+    font-family:'Caveat', sans-serif;
     font-size: 35px; /* Gør overskriften større */
     margin-bottom: 10px;
     color: #fff;
