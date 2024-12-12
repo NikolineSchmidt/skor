@@ -5,12 +5,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #7a58e4;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
 
 h1 {
     margin: 0;
@@ -49,11 +43,3 @@ li {
     
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #7a58e4;
-    color: white;
-    margin-top: 20px;
-}

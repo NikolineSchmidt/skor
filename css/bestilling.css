@@ -5,22 +5,6 @@ body {
     background-color: #201e4b;
 }
 
-header {
-    background-color: #7a58e4; 
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-header nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
 
 section {
     padding: 2rem;
