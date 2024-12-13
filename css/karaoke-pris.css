@@ -107,6 +107,11 @@ main {
 }
 
 
+
+
+
+
+
 /* Gør priser og info-karaoke til flex-bokse på større skærme */
 @media (min-width: 768px) {
     /* Sørg for, at priser og info-karaoke deler pladsen ligeligt */
