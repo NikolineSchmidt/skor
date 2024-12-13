@@ -28,3 +28,4 @@ subMenuLinks.forEach((link) => {
         // Linket vil navigere normalt
     });
 });
+

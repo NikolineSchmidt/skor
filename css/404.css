@@ -1,9 +1,8 @@
-body {
+ body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #201e4b;
@@ -11,32 +10,26 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
-h1 {
+main h1 {
     margin: 0;
     font-size: 2rem;
 }
-p {
+main p {
     margin: 0.5rem 0;
     font-size: 1.2rem;
 }
-img {
-    max-width: 50%;
-    height: auto;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-a {
+
+
+main, a {
     margin-top: 20px;
     font-size: 1rem;
     color: white;
     text-decoration: none;
-    border: 1px solid #7a58e4;
-    background-color: #7a58e4;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
-a:hover {
+ main a:hover {
     background-color: #7a58e4;
     color: white;
 }

@@ -9,12 +9,13 @@ body {
 }
 
 /* Header */
-header {
-    font-size: 1.8em;
+main {
+    font-size: 1.5em;
     color: #7a58e4;
     margin-bottom: 20px;
     text-align: center;
     padding: 15px 0;
+    margin-top: 50px;
 }
 
 /* Wrapper til billedet og hits */
@@ -115,7 +116,7 @@ header {
 /* Media Queries (kun for Desktop) */
 @media (min-width: 768px) {
     /* Header-størrelse */
-    header {
+    main {
         font-size: 2.4em;
         padding: 40px 0;
     }

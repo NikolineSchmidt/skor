@@ -11,9 +11,9 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    padding-top: 40px; /* Undgår overlap med navigationen */
 }
 
-/* Header styling */
 header {
     background-color: #7a58e4;
     color: white;
@@ -21,9 +21,15 @@ header {
     justify-content: space-between;
     align-items: center; /* Sørger for at logo og menupunkter er centreret vertikalt */
     padding: 10px 20px; /* Justér padding for at tilpasse indhold */
-    position: relative;
+    position: fixed; /* Får headeren til at være fastlåst */
+    top: 0; /* Lås den fast øverst */
+    left: 0; /* Sørg for, at den er helt til venstre */
+    right: 0; /* Sørg for, at den er helt til højre */
+    z-index: 1000; /* Sørg for, at headeren er øverst */
     height: 80px; /* Navigationens højde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Giver headeren en skygge for at adskille den fra indholdet */
 }
+
 
 /* Logo styling */
 .nav-title .logo img {
@@ -121,7 +127,7 @@ Når menuen er lukket, gendannes burger-ikonet
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15.5px;
 }
 
 /* Undermenu styling */
@@ -149,6 +155,8 @@ Når menuen er lukket, gendannes burger-ikonet
 .nav-sub-menu a {
     padding: 10px 0;
 }
+
+
 
 /* Desktop styles */
 @media (min-width: 768px) {

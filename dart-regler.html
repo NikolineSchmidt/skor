@@ -7,10 +7,82 @@
     <title>Dart Regler</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dart-regler.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu" />
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
+
+    <header>
+        <nav class="nav-title">
+            <a href="aarhus.html" class="logo">
+                <img src="img/skor-logo.webp" alt="Skor logo">
+            </a>
+        </nav>
+        <input type="checkbox" id="nav-check">
+        <nav class="nav-btn">
+            <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </nav>  
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="#">DART</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#dart">BOOK EN BANE</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-regler.html">REGLER</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-pris.html">PRISER FOR DARTBANER</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">KARAOKE</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#karaoke">BOOK VORES RUM</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-hits.html">TOP KARAOKE-HITS</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-pris.html">PRISER FOR KARAOKE</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">ARRANGEMENTER</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="404.html">TIRSDAGTURNERING</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">FIRMAFEST</a></li>
+                    <li class="nav-sub-menu-item"><a href="burger-boom.html">STØRRE GRUPPER</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">KOMMENDE EVENTS</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="menukort.html">MENUKORT</a>
+
+            </li>
+            <li class="nav-list-item">
+                <a href="#">OM SKOR</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#footer-section">KONTAKT OS</a></li>
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#gavekort">GAVEKORT</a></li>
+                    <li class="nav-sub-menu-item"><a href="praktisk-info.html">PRATISK INFO</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item booking-item">
+                <a href="bestilling.html">BOOK NU</a>
+            </li>
+        </ul>
+    </header>
+
     <main>
         <h1>Dart Regler</h1>
+        <div class="center-text">
+            Her finder du vores 5 forskellige spil, som vi selv har designet og programmeret.<br>
+            Vi håber, I synes, de er lige så sjove, som vi gør!
+            Spilene stiger i sværhedsgrad, så det første spil, "Chug It", er det nemmeste, og "Shanghai" er det sværeste.
+            Er du klar til at tage udfordringen op? Lad spillet begynde, og se, om du kan ramme bullseye! 🎯
+        </div>
+        
 
         <div class="flip-container">
             <!-- Flip Card 1: CHUG IT -->
@@ -19,13 +91,15 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="img/chugit.webp" alt="Chug It Image">
-                        <p>Formålet med dette spil er at drikke hele din øl.</p>
+                        <p>Drik din øl på en sjov og konkurrencedygtig måde, mens du sigter efter at komme præcist ned på 0 point.</p>
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>Slå hvor som helst på brættet for at tage en slurk af din øl. Størrelsen af din slurk afhænger af, hvor mange point du får.</li>
-                            <li>Hvert hold eller spiller starter med 185 point.</li>
-                            <li>Den første spiller, der når 0, vinder spillet. Husk, at du skal opnå præcis 0, ellers vil du "mislykke" og får derfor ingen point for den runde.</li>
+                            <li>Hver spiller starter med 185 point.</li>
+                            <li>Sigt efter dartbrættet og tag en slurk af din øl.</li>
+                            <li>tørrelsen af slurken afhænger af, hvor mange point du scorer.</li>
+                            <li>Den første spiller, der når præcis 0 point, vinder spillet.</li>
+                            <li>Hvis du går under 0 eller ikke rammer præcis 0, "mislykkes" du og mister point i den runde.</li>
                         </ul>
                     </div>
                 </div>
@@ -37,14 +111,15 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="img/donk.webp" alt="donk">
-                        <p>Mange husker den gode gamle G-R-I-S, som blev spillet i skolegården.</p>
+                        <p>Undgå at blive "DONK" ved at overgå eller udligne den forrige spillers score. Vinderen er den sidste, der ikke bliver "DONK".</p>
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>DONK er den islandske version af det og betyder æsel. Du skal altid udligne eller overgå den foregående spillers score.</li>
-                            <li>Hvis du ikke gør det, får du ét bogstav.</li>
-                            <li>Hvis du mislykkes 4 gange, er du DONK og ryger ud. Vinderen er den eneste person, der ikke bliver DONK.</li>
-                            <li>Det er godt at huske på, at selv om man ikke kan overgå den foregående spillers score, skal man stadig forsøge at score så højt som muligt, da den næste spiller skal overgå dig.</li>
+                            <li>Spillet er en islandsk version af den klassiske G-R-I-S og spilles ved at score højere end den forrige spiller.</li>
+                            <li>Du skal altid udligne eller overgå den forrige spillers score.</li>
+                            <li>Hvis du ikke gør det, får du ét bogstav (D, O, N eller K).</li>
+                            <li>Hvis du får alle fire bogstaver, bliver du "DONK" og ryger ud af spillet.</li>
+                            <li>Vinderen er den sidste spiller, der ikke har fået "DONK".</li>
                         </ul>
                     </div>
                 </div>
@@ -56,13 +131,14 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="img/killer.webp" alt="killer Image">
-                        <p>Hvert hold eller spiller får tildelt et felt på brættet.</p>
+                        <p>Målet med spillet er at eliminere dine modstandere ved at ramme deres felter, samtidig med at du beskytter dit eget felt.</p>
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>Du skal remme dit felt tre gange for at blive en dræber.</li>
-                            <li>Når du har opnået status som dræber, skal du forsøge at ramme dine modstanderes felt for at eliminere dem.</li>
-                            <li>Den sidste mand, der står tilbage, vinder spillet.</li>
+                            <li>Hvert hold eller spiller får tildelt et felt på brættet.</li>
+                            <li>Du skal ramme dit felt tre gange for at blive en "Killer".</li>
+                            <li>Når du har opnået status som "killer", skal du forsøge at ramme modstandernes felter for at eliminere dem.</li>
+                            <li>Den sidste spiller eller hold, der står tilbage, vinder spillet.</li>
                         </ul>
                     </div>
                 </div>
@@ -74,14 +150,15 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="img/minesweeper.webp" alt="mine sweeper Image">
-                        <p>Formålet med spillet er at samle så mange point som muligt, inden spillet slutter. Hver spiller starter med tre liv.</p>
+                        <p>Målet er at samle så mange point som muligt, inden spillet slutter.</p>
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>Dartskiven fungerer som en almindelig dartskive, men der er bombefelter på skiven, som er markeret med rødt på skærmen.</li>
+                            <li>Hver spiller starter med tre liv.</li>
+                            <li>Dartskiven fungerer som en almindelig dartskive, men med bombefelter markeret med rødt på skærmen.</li>
                             <li>I hver runde tilføjes flere bombefelter.</li>
-                            <li>Hvis du rammer et bombefelt, får du nul point for det kast og mister ét liv.</li>
-                            <li>Vinderen er den spiller, der har flest point, når alle spillere er blevet elimineret, eller efter 8 runder.</li>
+                            <li>Hvis du rammer et bombefelt, får du nul point for kastet og mister ét liv.</li>
+                            <li>Vinderen er den spiller, der har flest point, når alle spillere er elimineret, eller efter 8 runder.</li>
                         </ul>
                     </div>
                 </div>
@@ -93,19 +170,60 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="img/shanghai.webp" alt="Shanghai Image">
-                        <p>Ram målet i hver runde for at samle point.</p>
+                        <p>Hvor præcise er I på tværs af brættet?</p>
                     </div>
                     <div class="flip-card-back">
                         <ul>
-                            <li>Du samler de point, som måltallet er for hvert skud (dobbelt og tredobbelt tæller).</li>
-                            <li>Måltallet stiger for hver runde, så giv ikke op, hvis de første par skud går dårligt.</li>
-                            <li>Du kan nå at vende det under “crunch-time”. Vinderen er det hold eller den spiller, der har flest point efter alle runder.</li>
-                            <li>Du kan også nå et Shanghai ved at ramme et enkelt, dobbelt og tredobbelt felt af måltallet i samme runde og dermed vinde med det samme.</li>
+                            <li>Shanghai består af 8 runder.</li>
+                            <li>Ram måltallet i hver runde for at samle point.</li>
+                            <li>Du samler så mange point, som måltallet er for hvert skud (dobbelt og tredobbelt tæller med).</li>
+                            <li>Vinderen er det hold eller den spiller, der har flest point efter alle runder</li>
+                            <li>Du kan også opnå et Shanghai ved at ramme et enkelt, dobbelt og tredobbelt af måltallet i samme runde og vinde med det samme.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Kontakt -->
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Telefontorvet 10, Aarhus</p>
+                <p><a href="mailto:skorbar@skorbar.dk">skorbar@skorbar.dk</a> <span class="obs">(Vi svarer inden for 2 hverdage)</span></p>
+                <p>Telefon: <a href="tel:41221180">+45 41 22 11 80</a> <span class="obs">(OBS: Vi besvarer kun opkald i åbningstiden og ikke, når vi har travlt)</span></p>
+                <div id="map"></div>
+            </div>
+            <!-- Åbningstider -->
+            <div class="footer-section">
+                <h3>Åbningstider</h3>
+                <p>Mandag: 15:00-22:00</p>
+                <p>Tirsdag: 15:00-22:00</p>
+                <p>Onsdag: 15:00-23:00</p>
+                <p>Torsdag: 15:00-00:00</p>
+                <p>Fredag: 13:00-02:00</p>
+                <p>Lørdag: 13:00-02:00</p>
+                <p>Søndag: 13:00-22:00</p>
+            </div>
+            <!-- Hvor finder jeg? -->
+            <div class="footer-section">
+                <h3>Hvor finder jeg</h3>
+                <p><a href="menukort.html">Menukort</a></p>
+                <p><a href="bestilling.html">Booking</a></p>
+                <h3>Find os</h3>
+                <ul class="social-icons">
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-square-facebook"></i></li>
+                </ul>            
+            </div>
+        </div>
+    </footer>    
+
+    <!-- Linker til js i slutningen af body -->
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
