@@ -55,25 +55,23 @@ main img {
     border-radius: 50px;
 }
 
-/* STYLING AF UNDEROVERSKRIFT BURGERBOOM MENU */
-.burgerboom-overskrift {
-    background-color: #D4A3E2;
-    color: #201e4b;
-    text-align: left;
-    font-size: 0.6em;
-    font-weight: bold;
-    border-radius: 50px;
-    margin: 20px 0px;
-}
-
 
 .info-arrangement {
     background-color: #3db180;
     color: #201e4b;
     border-radius: 20px;
+    margin: 20px 0px;
+    padding: 10px;
 }
 
-
+.burgerboom-menu {
+    background-color: #3db180;
+    color: #201e4b;
+    font-size: 0.8em;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 10px;
+}
 .burger-historie {
     background-color: white;
     color: #201e4b;
@@ -87,12 +85,34 @@ main img {
     flex-direction: column; 
 }
 
+/* Styling af send email knap */
+.btn-send-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4A3E2;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 40px;
+    margin: 5px 40px;
+    
+}
+
+.btn-send-email a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;    
+    color:#201e4b;
+    font-size: 1.6em;
+}
+
 /* Styling af link i knapperne */
 .btn-container a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+
 
 .btn-container {
     display: flex;
