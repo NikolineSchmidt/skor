@@ -57,7 +57,7 @@ main img {
 
 
 .info-arrangement {
-    background-color: #3db180;
+    background-color: #C6E7A3;
     color: #201e4b;
     border-radius: 20px;
     margin: 20px 0px;
@@ -65,7 +65,7 @@ main img {
 }
 
 .burgerboom-menu {
-    background-color: #3db180;
+    background-color: #C6E7A3;
     color: #201e4b;
     font-size: 0.8em;
     border-radius: 20px;
@@ -73,7 +73,7 @@ main img {
     padding: 10px;
 }
 .burger-historie {
-    background-color: white;
+    background-color: #ECE9E7;
     color: #201e4b;
     font: size 1.5em;
     margin: 50px;
@@ -94,7 +94,7 @@ main img {
     border: none;
     border-radius: 20px;
     padding: 15px 40px;
-    margin: 5px 40px;
+    margin: 5px 30px;
     
 }
 
@@ -104,6 +104,11 @@ main img {
     font-weight: bold;    
     color:#201e4b;
     font-size: 1.6em;
+}
+
+.tekst-info p {
+    color: #201e4b;
+    font-size: 0.6em;
 }
 
 /* Styling af link i knapperne */
