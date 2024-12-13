@@ -26,7 +26,7 @@ main img {
 }
 
 .info-burgerboom {
-    background-color: #7a58e4;
+    background-color: #ECE9E7;
     font-size: 1.5em;
     margin: 50px;
     max-width: 95%;
@@ -36,6 +36,43 @@ main img {
     display: flex;
     flex-direction: column; 
 }
+
+/* Styling af overskriften */
+.info-burgerboom h3 {
+    color: #201e4b;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Styling af underoverskrift */
+.underoverskrift {
+    background-color:#D4A3E2;
+    color:#201e4b;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+/* STYLING AF UNDEROVERSKRIFT BURGERBOOM MENU */
+.burgerboom-overskrift {
+    background-color: #D4A3E2;
+    color: #201e4b;
+    text-align: left;
+    font-size: 0.6em;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 20px 0px;
+}
+
+
+.info-arrangement {
+    background-color: #3db180;
+    color: #201e4b;
+    border-radius: 20px;
+}
+
 
 .burger-historie {
     background-color: white;
