@@ -94,7 +94,7 @@ h1 {
 }
 
 .btn-dart {
-    background-color: #3db180;
+    background-color: #7a58e4;
      border: none;
      border-radius: 5px;
      padding: 15px 40px;
@@ -108,15 +108,6 @@ h1 {
     color: #fff; /* Hvid tekst i linket */
     text-decoration: none; /* Fjerner understregning i linket */
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -144,6 +135,10 @@ h1 {
         padding: 20px;
         border-radius: 8px;
         box-sizing: border-box;
+    }
+
+    .btn-dart:hover {
+        background-color: #3db180; 
     }
     
 }
