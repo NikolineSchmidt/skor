@@ -33,6 +33,10 @@ h1 {
     text-align: center;
 }
 
+h4{
+    font-size: 25px; 
+}
+
 .info-burgerboom {
     background-color: #ECE9E7;
     font-size: 1.5em;
