@@ -6,7 +6,7 @@ body {
 }
 
 h2{
-    font-size: 50px; 
+    font-size: 25px; 
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -23,7 +23,7 @@ section {
     border-radius: 8px;
     background-color: #201e4b;
     color: white;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 form {
