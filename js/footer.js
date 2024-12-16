@@ -22,4 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         console.error("Google Maps container blev ikke fundet!");
     }
+
+    // Tilføj smooth scrolling til footer-link
+    const footerLink = document.querySelectorAll('a[href="#kontakt"]');
+
+    footerLink.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault(); // Stop default navigation
+            const footer = document.getElementById("kontakt");
+            if (footer) {
+                footer.scrollIntoView({
+                    behavior: "smooth", // Giver en blød scrollingseffekt
+                    block: "end" // Sørg for, at footeren vises korrekt
+                });
+            } else {
+                console.error("Footer med id 'kontakt' blev ikke fundet!");
+            }
+        });
+    });
 });
