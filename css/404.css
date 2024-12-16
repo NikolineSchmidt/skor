@@ -1,27 +1,39 @@
- body {
+/* 404 side */
+body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100vh;
-    background-color: #201e4b;
+    background-color: #201e4b; /* Skor mørkeblå */
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centrerer indholdet vertikalt */
+    align-items: center;
+    height: 100%;  /* Sørg for, at main fylder hele højden */
+    padding: 20px;  /* Tilføj lidt padding omkring hele main-sektionen */
+}
+
 main h1 {
-    margin: 0;
+    margin-bottom: 1.5rem;  /* Øger afstanden mellem overskriften og næste element */
     font-size: 2rem;
 }
+
+/* Stilen for den ekstra tekst */
 main p {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0;  /* Øg marginen mellem p-elementerne */
     font-size: 1.2rem;
 }
 
-
-main, a {
-    margin-top: 20px;
+/* Stilen for knappen (link) */
+main a {
+    margin-top: 20px;  /* Hold margin-top for at skabe afstand fra de øvrige elementer */
     font-size: 1rem;
     color: white;
     text-decoration: none;
@@ -29,11 +41,17 @@ main, a {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
- main a:hover {
-    background-color: #7a58e4;
-    color: white;
+
+
+footer {
+    background-color: #201E4B; /* Eksempel på farve til footer */
+    color: white; /* Hvid tekstfarve */
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Fuld bredde */
 }
 
+/* Animering for billedet */
 @keyframes hop {
     0%, 100% {
         transform: translateY(0);
@@ -43,27 +61,18 @@ main, a {
     }
 }
 
+/* Stilen for billedet */
 #dart-image {
+    width: 75%;
+    max-width: 300px;
+    height: auto;
     animation: hop 1s ease-in-out infinite;
 }
 
-#dart-image {
-    width: 75%; 
-    max-width: 300px; 
-    height: auto; 
-    animation: hop 1s ease-in-out infinite;
-}
-
-/* Responsive Design */
+/* Responsivt design */
 @media (max-width: 768px) {
     #dart-image {
         width: 90%;
     }
 }
 
-@media (max-width: 480px) {
-    #dart-image {
-        width: 90%;
-        max-width: none; 
-    }
-}
