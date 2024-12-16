@@ -88,7 +88,7 @@ main {
 }
 
 .btn-karaoke {
-    background-color: #3db180; /* Grøn baggrund */
+    background-color: #7a58e4; /* Grøn baggrund */
     border: none;
     border-radius: 5px;
     padding: 15px 40px;
@@ -127,6 +127,6 @@ main {
     }
 
     .btn-karaoke:hover {
-        background-color: #201e4b; 
+        background-color: #3db180; 
     }
 }
