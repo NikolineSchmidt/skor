@@ -47,7 +47,7 @@ main img {
 
 /* Styling af underoverskrift */
 .underoverskrift {
-    background-color:#D4A3E2;
+    background-color:#7a58e4;
     color:#201e4b;
     text-align: center;
     font-size: 0.6em;
@@ -57,7 +57,7 @@ main img {
 
 
 .info-arrangement {
-    background-color: #C6E7A3;
+    background-color: #3db180;
     color: #201e4b;
     border-radius: 20px;
     margin: 20px 0px;
@@ -65,7 +65,7 @@ main img {
 }
 
 .burgerboom-menu {
-    background-color: #C6E7A3;
+    background-color: #3db180;
     color: #201e4b;
     font-size: 0.8em;
     border-radius: 20px;
@@ -90,7 +90,7 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D4A3E2;
+    background-color: #7a58e4;
     border: none;
     border-radius: 20px;
     padding: 15px 40px;
@@ -135,12 +135,26 @@ main img {
     font-size: 15px;
 }
 
-.btn-burger {
-    background-color: #3db180;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 40px;
-    margin: 5px 40px;
-    color: #fff;
-    font-size: 15px;
+
+
+
+
+
+/* Responsivt layout for større skærme */
+@media (min-width: 768px) {
+   
+    .info-burgerboom {
+        flex-direction: column; /* Overskrift forbliver øverst */
+        align-items: center;    /* Centrer layoutet */
+        gap: 20px;
+    }
+    
+
+    .info-burgerboom > .info-arrangement,
+    .info-burgerboom > .burgerboom-menu {
+        display: inline-block; /* Sørger for, at de opfører sig vandret */
+        width: 48%;            /* Fordel pladsen mellem de to elementer */
+        vertical-align: top;   /* Holder bokse på samme linje */
+    }
 }
+
