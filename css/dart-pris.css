@@ -17,6 +17,15 @@ main {
     padding: 15px 0;
 }
 
+h1 {
+    font-size: 50px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
 /* Styling af sectionen priser */
 .priser {
     background-color: #7a58e4;
