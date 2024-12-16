@@ -46,3 +46,42 @@ main, a {
 #dart-image {
     animation: hop 1s ease-in-out infinite;
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    main, a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+    }
+
+    main, a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
