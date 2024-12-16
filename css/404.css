@@ -47,41 +47,23 @@ main, a {
     animation: hop 1s ease-in-out infinite;
 }
 
+#dart-image {
+    width: 75%; 
+    max-width: 300px; 
+    height: auto; 
+    animation: hop 1s ease-in-out infinite;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    main h1 {
-        font-size: 1.8rem;
-    }
-
-    main p {
-        font-size: 1rem;
-    }
-
-    main, a {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+    #dart-image {
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 5px;
-    }
-
-    main h1 {
-        font-size: 1.5rem;
-    }
-
-    main p {
-        font-size: 0.9rem;
-    }
-
-    main, a {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+    #dart-image {
+        width: 90%;
+        max-width: none; 
     }
 }
