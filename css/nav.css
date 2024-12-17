@@ -1,50 +1,50 @@
+/* Grundlæggende styling */
 * {
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fjern standardmargener og padding for html og body */
+/* Fjern standardmargener og padding */
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    padding-top: 40px;
+    padding-top: 40px; 
 }
 
-/* Styling af header */
 header {
     background-color: #7a58e4;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    height: 80px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center; 
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+    height: 80px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Styling af logo */
+
+/* Logo styling */
 .nav-title .logo img {
     height: 40px;
     width: auto;
 }
 
-/* Burger-menu styling */
 .nav-btn {
-    z-index: 100;
+    z-index: 100; 
 }
 
-/* Når menuen er åben, ændres burger-ikonet */
 #nav-check:checked ~ .nav-btn label {
-    z-index: 101;
+    z-index: 101; 
 }
+
 
 .nav-btn label {
     display: flex;
@@ -66,7 +66,42 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-/* Navigation menu styling */
+#nav-check:checked ~ .nav-btn label span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute; /* Sørger for, at linjerne overlapper */
+    top: 50%; /* Centrer lodret */
+    left: 50%; /* Centrer vandret */
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#nav-check:checked ~ .nav-btn label span:nth-child(2) {
+    opacity: 0; /* Skjuler midterlinjen */
+}
+
+#nav-check:checked ~ .nav-btn label span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+Når menuen er lukket, gendannes burger-ikonet
+#nav-check:not(:checked) ~ .nav-btn label span:nth-child(1),
+#nav-check:not(:checked) ~ .nav-btn label span:nth-child(3) {
+    transform: rotate(0) translate(0, 0);
+}
+
+#nav-check:not(:checked) ~ .nav-btn label span:nth-child(2) {
+    opacity: 1; /* Gør den midterste linje synlig igen */
+}
+
+/* Hide the checkbox */
+#nav-check {
+    display: none;
+}
+
+/* Navigation menu */
 .nav-list {
     display: none;
     flex-direction: column;
@@ -79,12 +114,11 @@ header {
     z-index: 9;
 }
 
-/* Vis menu når nav-check er checked */
+/* Show menu when checked */
 #nav-check:checked ~ .nav-list {
     display: flex;
 }
 
-/* Styling af listepunkter */
 .nav-list-item {
     padding: 15px 20px;
 }
@@ -105,6 +139,15 @@ header {
     list-style: none;
 }
 
+.nav-sub-menu-item{
+    padding: 5px 0;
+}
+
+.nav-sub-menu-item a{
+    font-size: 16px;
+}
+
+
 .nav-list-item.active .nav-sub-menu {
     display: flex;
 }
@@ -113,10 +156,12 @@ header {
     padding: 10px 0;
 }
 
+
+
 /* Desktop styles */
 @media (min-width: 768px) {
     .nav-btn {
-        display: none; /* Skjul burger-menu på desktop */
+        display: none; 
     }
 
     .nav-list {
@@ -155,29 +200,32 @@ header {
         display: flex;
     }
 
-    .nav-sub-menu:hover {
+    .nav-sub-menu:hover  {
         display: flex;
     }
 
+    /* Gør undermenupunkterne større og fed tekst på desktop */
     .nav-sub-menu a {
-        font-size: 30px;
-        font-weight: bold;
-        padding: 12px 20px;
+        font-size: 30px; 
+        font-weight: bold; 
+        padding: 12px 20px; 
     }
 
     .nav-sub-menu a:hover {
-        color: #201e4b;
+        color:#201e4b; 
     }
 
-    .nav-sub-menu-item {
+    .nav-sub-menu-item{
         padding: 10px;
     }
 
+    /* Book nu knappen vises på desktop */
     .booking-item {
         display: block;
         margin-left: auto;
     }
 
+    /* Styling til "BOOK NU"-knap */
     .booking-item a {
         background-color: #201e4b;
         color: white;
@@ -189,6 +237,7 @@ header {
         transition: background-color 0.3s ease;
     }
 
+    /* Hover-effekt til knappen */
     .booking-item a:hover {
         background-color: #3db180;
     }
