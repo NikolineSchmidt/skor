@@ -2,25 +2,26 @@ body {
     background-color: #201e4b;
 }
 
-/* Container */
+/* Container for menuen */
 .menu-wrapper {
     padding: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: #201e4b;
-    border-radius: 20px;
-    overflow: hidden;
-    text-align: center;
+    max-width: 1100px; 
+    margin: 0 auto; 
+    background-color: #201e4b; 
+    border-radius: 20px; /* Rundede hjørner */
+    overflow: hidden; 
+    text-align: center; 
 }
 
-/* Logo */
+/* Logo-container */
 .logo-container {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: center; 
+    gap: 60px; /* Afstand mellem logoerne */
     margin-bottom: 50px;
 }
 
+/* Styling af logo */
 .logo {
     font-size: 36px;
     font-weight: bold;
@@ -28,29 +29,30 @@ body {
     letter-spacing: 5px;
 }
 
+/* Farver til de to logoer */
 .drinks-logo {
-    color: #7a58e4;
+    color: #7a58e4; 
 }
 
 .eats-logo {
-    color: #3db180;
+    color: #3db180; 
 }
 
-/* Sektioner */
+/* Sektioner i menuen */
 .menu-section {
     margin-bottom: 40px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 .menu-section:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); 
 }
 
 /* Sektionstitler */
 .section-title {
     font-size: 28px;
     font-weight: bold;
-    color: #3db180;
+    color: #3db180; 
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -58,70 +60,63 @@ body {
     display: inline-block;
 }
 
+/* Understreger sektionstitler */
 .section-title::after {
     content: '';
     width: 50%;
     height: 3px;
-    background-color: #7a58e4;
+    background-color: #7a58e4; 
     position: absolute;
     bottom: -5px;
     left: 25%;
 }
 
-/* Menu items */
+/* Menu-items (enkelte retter i menuen) */
 .menu-items {
     display: flex;
-    flex-direction: column; /* Stak menu items vertikalt */
-    align-items: center; /* Centrer elementerne horisontalt */
+    flex-direction: column; 
+    align-items: center; 
     gap: 15px;
     font-size: 18px;
     font-weight: 600;
 }
 
-/* For hver menu item */
+/* Styling af hver menu item */
 .menu-items p {
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: #fff;
+    background-color: #fff; 
     border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
     cursor: pointer;
-    width: 100%; /* Gør p-elementet så bredt som containeren */
-    max-width: 600px; /* Begræns bredden af hver menu-item */
+    width: 100%; 
+    max-width: 600px; 
 }
 
 /* Hover effekt på menu items */
 .menu-items p:hover {
-    background-color: #7a58e4;
-    transform: scale(1.05);
-    color: #fff;
+    background-color: #7a58e4; 
+    transform: scale(1.05); /* Let zoom-effekt */
+    color: #fff; 
 }
 
-.menu-items span {
-    display: inline-block;
-}
-
+/* Styling af pris */
 .price {
     font-weight: bold;
-    color: #3db180;
+    color: #3db180; 
 }
 
-/* Animeret effekt på pris */
-.price:hover {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease;
-}
 
-/* Responsivt design */
+/* Responsivt design for mindre skærme */
 @media screen and (min-width: 768px) {
     .menu-items p {
-        width: 80%; /* Gør menu items en smule smallere på større skærme */
+        width: 80%; 
     }
 }
 
 @media screen and (min-width: 1024px) {
     .menu-items p {
-        width: 70%; /* Endnu smallere på større skærme */
+        width: 70%; 
     }
 }

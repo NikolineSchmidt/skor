@@ -15,20 +15,28 @@
 </head>
 <body>
     <header>
+        <!-- Navigation Title: Indeholder logoet med link til aarhus.html -->
         <nav class="nav-title">
             <a href="aarhus.html" class="logo">
                 <img src="img/skor-logo.webp" alt="Skor logo">
             </a>
         </nav>
+    
+        <!-- Navigation Checkbox: Bruges til at styre visning af menuen -->
         <input type="checkbox" id="nav-check">
+    
+        <!-- Navigation Button: burger-ikon til mobilvisning -->
         <nav class="nav-btn">
             <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
         </nav>  
+    
+        <!-- Navigation List: Primære navigationspunkter -->
         <ul class="nav-list">
+            <!-- DART-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">DART</a>
                 <ul class="nav-sub-menu">
@@ -37,6 +45,8 @@
                     <li class="nav-sub-menu-item"><a href="dart-pris.html">PRISER FOR DARTBANER</a></li>
                 </ul>
             </li>
+    
+            <!-- KARAOKE-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">KARAOKE</a>
                 <ul class="nav-sub-menu">
@@ -45,6 +55,8 @@
                     <li class="nav-sub-menu-item"><a href="karaoke-pris.html">PRISER FOR KARAOKE</a></li>
                 </ul>
             </li>
+    
+            <!-- ARRANGEMENTER-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">ARRANGEMENTER</a>
                 <ul class="nav-sub-menu">
@@ -54,53 +66,65 @@
                     <li class="nav-sub-menu-item"><a href="404.html">KOMMENDE EVENTS</a></li>
                 </ul>
             </li>
+    
+            <!-- MENUKORT -->
             <li class="nav-list-item">
                 <a href="menukort.html">MENUKORT</a>
-
             </li>
+    
+            <!-- OM SKOR-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">OM SKOR</a>
                 <ul class="nav-sub-menu">
-                    <li class="nav-sub-menu-item">
                     <li class="nav-sub-menu-item"><a href="#kontakt">KONTAKT OS</a></li>
                     <li class="nav-sub-menu-item"><a href="bestilling.html#gavekort">GAVEKORT</a></li>
                     <li class="nav-sub-menu-item"><a href="praktisk-info.html">PRATISK INFO</a></li>
                 </ul>
             </li>
+    
+            <!-- BOOK NU: Fremhævet menu til booking -->
             <li class="nav-list-item booking-item">
                 <a href="bestilling.html">BOOK NU</a>
             </li>
         </ul>
     </header>
-    <main>
-        <h1>TOP KARAOKE-HITS</h1>
-    </main>
-    <section class="content-wrapper">
-        <div class="image-text">
-            <img src="img/karaoke.webp" alt="Karaoke" />
-            <p>Skor har testet karaoke-rummet, og her er vores yndlings karaoke sange, der altid er et hit til vores personalefester!</p>
-        </div>
-        <div class="hits">
-            <h2>Vores Top 10</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=WaSy8yy-mr8" target="_blank">🎤 Before He Cheats (Carrie Underwood)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=liOcZ4hbU34" target="_blank">🎤 Boing! (Nik & Jay)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=aOKhjCM38QQ" target="_blank">🎤 Daddy Cool (Boney M.)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=-yvHqenLpUU" target="_blank">🎤 Drunk in the Morning (Lukas Graham)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=2up_Eq6r6Ko" target="_blank">🎤 Hotel Room Service (Pitbull)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=eH3giaIzONA" target="_blank">🎤 I Wanna Dance with Somebody (Whitney Houston)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=6dYWe1c3OyU" target="_blank">🎤 I Will Survive (Gloria Gaynor)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=M11SvDtPBhA" target="_blank">🎤 Party in the U.S.A. (Miley Cyrus)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=JRfuAukYTKg" target="_blank">🎤 Titanium (David Guetta)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=b7k0a5hYnSI" target="_blank">🎤 Unwritten (Natasha Bedingfield)</a></li>
-            </ul>            
-        </div>
-    </section>
+
     
-    <section class="karaoke-info">
-        <p>Vil du synge med? Tjek alle sangene ud på <a href="https://www.karafun.com/karaoke/" target="_blank">Karafun</a>.</p>
-        <p>Karaoke-rummet har plads til 20-25 personer og er udstyret med 2 mikrofoner. Perfekt til en festlig aften!</p>
-    </section>
+<main>
+    <h1>TOP KARAOKE-HITS</h1>
+</main>
+<section class="content-wrapper">
+    <!-- Billede af karaoke-rummet og en kort beskrivelse -->
+    <div class="image-text">
+        <img src="img/karaoke.webp" alt="Karaoke" />
+        <p>Skor har testet karaoke-rummet, og her er vores yndlings karaoke sange, der altid er et hit til vores personalefester!</p>
+    </div>
+    
+    <!-- Sektion med top 10 karaoke-sange og links til YouTube-videoer -->
+    <div class="hits">
+        <h2>Vores Top 10</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=WaSy8yy-mr8" target="_blank">🎤 Before He Cheats (Carrie Underwood)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=liOcZ4hbU34" target="_blank">🎤 Boing! (Nik & Jay)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=aOKhjCM38QQ" target="_blank">🎤 Daddy Cool (Boney M.)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=-yvHqenLpUU" target="_blank">🎤 Drunk in the Morning (Lukas Graham)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=2up_Eq6r6Ko" target="_blank">🎤 Hotel Room Service (Pitbull)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=eH3giaIzONA" target="_blank">🎤 I Wanna Dance with Somebody (Whitney Houston)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=6dYWe1c3OyU" target="_blank">🎤 I Will Survive (Gloria Gaynor)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=M11SvDtPBhA" target="_blank">🎤 Party in the U.S.A. (Miley Cyrus)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=JRfuAukYTKg" target="_blank">🎤 Titanium (David Guetta)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=b7k0a5hYnSI" target="_blank">🎤 Unwritten (Natasha Bedingfield)</a></li>
+        </ul>            
+    </div>
+</section>
+
+<section class="karaoke-info">
+    <!-- Link til Karafun -->
+    <p>Vil du synge med? Tjek alle sangene ud på <a href="https://www.karafun.com/karaoke/" target="_blank">Karafun</a>.</p>
+    
+    <!-- Information om karaoke-rummet og dets faciliteter -->
+    <p>Karaoke-rummet har plads til 20-25 personer og er udstyret med 2 mikrofoner. Perfekt til en festlig aften!</p>
+</section>
 
     <!-- Footer -->
     <footer>
