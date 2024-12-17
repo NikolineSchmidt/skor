@@ -1,25 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /*hvilkent font*/
     margin: 0;
     padding: 0;
-    background-color: #201e4b;
+    background-color: #201e4b; /*baggrunds farve*/
     
 }
 
 h2{
-    font-size: 25px; 
+    font-size: 25px; /* størrelsen på teksten*/
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 10px;
-    text-align: center;
+    text-align: center; /*centere teksten*/
 }
 
 
 section {
     padding: 2rem;
     margin: 1rem auto;
-    max-width: 800px;
+    max-width: 800px; /*bredden på section boksen 800 px*/
     border: 1px solid #201e4b;
     border-radius: 8px;
     background-color: #201e4b;
@@ -28,8 +28,8 @@ section {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /*viser indholdet*/
+    flex-direction: column; /* viser indholdet i en kolonne*/
     gap: 1rem;
 }
 
@@ -50,12 +50,12 @@ button {
     border: none;
     cursor: pointer;
 }
-
+/* når man holder over knappen bliver den grøn*/
 button:hover {
     background-color: #3db180;
 }
 
-/* Responsiv design */
+/* Responsiv design, til en mobil skærm */
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;

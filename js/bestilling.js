@@ -1,4 +1,5 @@
 "use strict;"
+// herunder laves booking stytem, når man skal booke dartbaner, med en evenlistener, som values i const, derefter går i if loop igang
 document.getElementById('dartBookingForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -9,13 +10,14 @@ document.getElementById('dartBookingForm').addEventListener('submit', function (
     const dartLanes = document.getElementById('dartLanes').value;
     const dartName = document.getElementById('dartName').value;
     const dartContact = document.getElementById('dartContact').value;
-
+// if loop, hvor hvis alle values er korrekte, kommer en alert op, hvor man kan se hvor mange baner man har booket, antal spillere, hvilken dato og i hvor lang tid, hvis starter else, og skriver "Udfyld venligst alle felter"
     if (dartDate && dartTime && dartDuration && dartPlayers && dartLanes && dartName && dartContact) {
         alert(`Tak, ${dartName}! Du har booket ${dartLanes} dartbane(r) den ${dartDate} kl. ${dartTime} for ${dartPlayers} spillere i ${dartDuration} minutter. Vi kontakter dig på ${dartContact}.`);
     } else {
         alert('Udfyld venligst alle felter.');
     }
 });
+// lavet på sammen måde som dart booking systemet, men bare med andre id'er
 document.getElementById('karaokeBookingForm').addEventListener('submit', function (e) {
     e.preventDefault();
 

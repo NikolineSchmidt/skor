@@ -6,19 +6,19 @@ body {
     background-color: #201e4b;
     color: white;
 }
-
+/* styleing af h1 text på siden*/
 h1 {
     margin: 0 0 10px;
     color: #7a58e4;
-    text-align: center;
+    text-align: center; /*centere texten*/
     font-size: 50px; 
     font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    letter-spacing: 2px; /*2px space mellem bogstaverne*/
+    text-transform: uppercase; /*store bogstaver*/
     margin: 0;
-    text-align: center;
+    
 }
-
+/* h2 styleing*/
 h2 {
     color: #201e4b;
 }
@@ -28,14 +28,14 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+/* tykkelsen på texten*/
 strong {
     font-weight: bold;
 }
 
 main {
     padding: 20px;
-    max-width: 600px;
+    max-width: 600px; /* styler bredden på main tagget*/
     margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ main {
 .info-section {
     margin-top: 20px;
 }
-
+/* her under styles infoboxen med farve, margin, padding, border radius, font størrelsen, font størrelsen på p & h2*/
 .info-box {
     background-color: #7a58e4;
     margin: 20px 0;
@@ -63,7 +63,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* Media Queries - Desktop */
+/* Resposive design, som hjælper */
 @media (min-width: 768px) {
     main {
         max-width: 900px;
