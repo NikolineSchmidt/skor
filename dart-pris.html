@@ -15,22 +15,29 @@
 </head>
 <body>
 
-    <!-- Nav -->
     <header>
+        <!-- Navigation Title: Indeholder logoet med link til aarhus.html -->
         <nav class="nav-title">
             <a href="aarhus.html" class="logo">
                 <img src="img/skor-logo.webp" alt="Skor logo">
             </a>
         </nav>
+    
+        <!-- Navigation Checkbox: Bruges til at styre visning af menuen -->
         <input type="checkbox" id="nav-check">
+    
+        <!-- Navigation Button: burger-ikon til mobilvisning -->
         <nav class="nav-btn">
             <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
         </nav>  
+    
+        <!-- Navigation List: Primære navigationspunkter -->
         <ul class="nav-list">
+            <!-- DART-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">DART</a>
                 <ul class="nav-sub-menu">
@@ -39,6 +46,8 @@
                     <li class="nav-sub-menu-item"><a href="dart-pris.html">PRISER FOR DARTBANER</a></li>
                 </ul>
             </li>
+    
+            <!-- KARAOKE-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">KARAOKE</a>
                 <ul class="nav-sub-menu">
@@ -47,6 +56,8 @@
                     <li class="nav-sub-menu-item"><a href="karaoke-pris.html">PRISER FOR KARAOKE</a></li>
                 </ul>
             </li>
+    
+            <!-- ARRANGEMENTER-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">ARRANGEMENTER</a>
                 <ul class="nav-sub-menu">
@@ -56,52 +67,61 @@
                     <li class="nav-sub-menu-item"><a href="404.html">KOMMENDE EVENTS</a></li>
                 </ul>
             </li>
+    
+            <!-- MENUKORT -->
             <li class="nav-list-item">
                 <a href="menukort.html">MENUKORT</a>
-
             </li>
+    
+            <!-- OM SKOR-menu med undermenu -->
             <li class="nav-list-item">
                 <a href="#">OM SKOR</a>
                 <ul class="nav-sub-menu">
-                    <li class="nav-sub-menu-item">
                     <li class="nav-sub-menu-item"><a href="#kontakt">KONTAKT OS</a></li>
                     <li class="nav-sub-menu-item"><a href="bestilling.html#gavekort">GAVEKORT</a></li>
                     <li class="nav-sub-menu-item"><a href="praktisk-info.html">PRATISK INFO</a></li>
                 </ul>
             </li>
+    
+            <!-- BOOK NU: Fremhævet menu til booking -->
             <li class="nav-list-item booking-item">
                 <a href="bestilling.html">BOOK NU</a>
             </li>
         </ul>
     </header>
 
+    <!-- overskrift på siden -->
     <main>
         <h1>DART PRISER</h1>
     </main>
   
+<!-- Container til sektioner med priser for dart -->
 <div class="content-priser">
+    <!-- Første sektion med information om 55 minutters dart -->
     <div class="content-55">
         <section class="priser">
+            <!-- Overskrift for tidsintervallet -->
             <h2>55 min. dart</h2>
-        
+            <!-- Tider og priser -->
             <div class="tider-container">
                 <div class="tidlig">
-                <p>16:00 - 20:00</p>
-                <p class="pris">250 kr</p>
+                    <p>16:00 - 20:00</p>
+                    <p class="pris">250 kr</p>
                 </div>
                 <div class="sent">
-                <p>20:00 - 02:00</p>
-                <p class="pris">300 kr</p>
+                    <p>20:00 - 02:00</p>
+                    <p class="pris">300 kr</p>
                 </div>
             </div>
-
         </section>
     </div>
 
+    <!-- Anden sektion med information om 80 minutters dart -->
     <div class="content-80">
         <section class="priser">
+            <!-- Overskrift for tidsintervallet -->
             <h2>80 min. dart</h2>
-        
+            <!-- Tider og priser -->
             <div class="tider-container">
                 <div class="tidlig">
                 <p>16:00 - 20:00</p>
@@ -112,27 +132,24 @@
                 <p class="pris">390 kr</p>
                 </div>
             </div>
-
         </section>
     </div>
 </div>
 
+<!-- Sektion med yderligere information omkring dartspil -->
 <section class="info-dart">
     <p>Højest 12 personer pr. stand</p>
     <p>7 eller flere og det er holdspil</p>
     <p>5 forskellige spil</p>
     <p>Alle kan spille</p>
+     <!-- Link til reglerne for dartspillene -->
     <p>Se vores <a href="dart-regler.html" target="_blank">regler</a> på de 5 forskellige spil</p>
 </section>
 
-<!-- Knappen nederst på siden -->
+<!-- Sektion med booking-knap nederst på siden -->
 <section class="btn-container">
     <a href="bestilling.html" class="btn-dart" target="_blank">BOOK NU</a>
 </section>
-
-
-
-
 
 
    <!-- Footer -->

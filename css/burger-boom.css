@@ -1,4 +1,5 @@
 /* Grundopsætning (Mobile-First) */
+/* Grundlæggende styling for body-elementet */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,6 +10,7 @@ body {
 }
 
 /* Header */
+/* Styling af hovedsektionen (main) med tekst og billede */
 main {
     font-size: 1.8em;
     color: #7a58e4;
@@ -17,6 +19,7 @@ main {
     padding: 15px 0;
 }
 
+/* Styling af billeder i main */
 main img {
     max-width: 100%;
     height: auto;
@@ -24,6 +27,7 @@ main img {
     margin: 0 auto;
 }
 
+/* Styling af overskriften */
 h1 {
     font-size: 50px; 
     font-weight: bold;
@@ -33,10 +37,12 @@ h1 {
     text-align: center;
 }
 
+/* Styling af underoverskrifter */
 h4{
     font-size: 25px; 
 }
 
+/* Styling af info-boksen */
 .info-burgerboom {
     background-color: #ECE9E7;
     font-size: 1.5em;
@@ -49,7 +55,7 @@ h4{
     flex-direction: column; 
 }
 
-/* Styling af overskriften */
+/* Styling af overskrifter i info-boksen */
 .info-burgerboom h3 {
     color: #201e4b;
     font-weight: bold;
@@ -71,6 +77,7 @@ h4{
     margin: 5px 30px;
 }
 
+/* Styling til arrangement-boksen */
 .info-arrangement {
     background-color: #3db180;
     color: #201e4b;
@@ -79,6 +86,7 @@ h4{
     padding: 10px;
 }
 
+/* Styling af oversigten til burger booms burgere og priser */
 .burgerboom-menu {
     background-color: #3db180;
     color: #201e4b;
@@ -89,6 +97,13 @@ h4{
     text-align: center;
 }
 
+/* Styling af tekst under burger booms menu */
+.tekst-info p {
+    color: #201e4b;
+    font-size: 20px;
+}
+
+/* Styling af boksen med information fra burger booms hjemmeside */
 .burger-historie {
     background-color: #ECE9E7;
     color: #201e4b;
@@ -102,52 +117,27 @@ h4{
     flex-direction: column; 
 }
 
+/* Styling af send e-mail knap */
 .btn-send-email {
-    background-color: #7a58e4; /* Lilla baggrundsfarve */
-    color: white; /* Hvid tekst */
-    font-family: Arial, sans-serif; /* Font */
-    font-size: 1em; /* Skalerbar tekststørrelse */
-    padding: 15px 40px; /* Indre margin */
-    border: none; /* Fjern standard kant */
-    border-radius: 20px; /* Rundede hjørner */
-    text-decoration: none; /* Fjern understrikning */
-    text-align: center; /* Centrer tekst */
-    display: inline-block; /* Sørg for at knapperne er inline */
-    cursor: pointer; /* Markér som klikbar */
+    background-color: #7a58e4; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    font-size: 1em; 
+    padding: 15px 40px;
+    border: none; 
+    border-radius: 20px;
+    text-decoration: none; 
+    text-align: center; 
+    display: inline-block;
+    cursor: pointer; 
     transition: background-color 0.3s ease;
 
-}
-
-/* Generelle knapstilarter */
-button, .btn-send-email a, .btn-burgerboom, .btn-burgerboom a {
-    background-color: #7a58e4; /* Lilla baggrundsfarve */
-    color: white; /* Hvid tekst */
-    font-family: Arial, sans-serif; /* Font */
-    font-size: 1em; /* Skalerbar tekststørrelse */
-    padding: 15px 40px; /* Indre margin */
-    border: none; /* Fjern standard kant */
-    border-radius: 20px; /* Rundede hjørner */
-    text-decoration: none; /* Fjern understrikning */
-    text-align: center; /* Centrer tekst */
-    display: inline-block; /* Sørg for at knapperne er inline */
-    cursor: pointer; /* Markér som klikbar */
-    transition: background-color 0.3s ease; /* Glat overgang ved hover */
-}
-
-/* Hover-effekt for alle knapper */
-button:hover, .btn-send-email a:hover, .btn-burgerboom:hover {
-    background-color: #3db180; /* Mørkere nuance ved hover */
 }
 
 /* Styling af send email knap */
 .btn-send-email a {
     font-weight: bold;    
     font-size: 1em;
-}
-
-.tekst-info p {
-    color: #201e4b;
-    font-size: 20px;
 }
 
 /* Styling af link i knapperne */
@@ -175,31 +165,31 @@ button:hover, .btn-send-email a:hover, .btn-burgerboom:hover {
     display: inline-block;
 }
 
-/* Hover-effekt for Burger Boom knap */
-.btn-burgerboom:hover {
-    background-color: #3db180;
-}
 
 /* Responsivt layout for større skærme */
 @media (min-width: 768px) {
     .info-burgerboom {
-        flex-direction: column; /* Overskrift forbliver øverst */
-        align-items: center;    /* Centrer layoutet */
+        flex-direction: column; 
+        align-items: center;   
         gap: 20px;
     }
 
     .info-burgerboom > .info-arrangement,
     .info-burgerboom > .burgerboom-menu {
-        display: inline-block; /* Sørger for, at de opfører sig vandret */
-        width: 48%;            /* Fordel pladsen mellem de to elementer */
-        vertical-align: top;   /* Holder bokse på samme linje */
+        display: inline-block;
+        width: 48%; 
+        vertical-align: top;   
     }
 
-    .btn-burgerboom:hover{
-        background-color: #3db180;
-    }
+    /* Hover-effekt for alle knapper */
+    button:hover, .btn-burgerboom:hover {
+    background-color: #3db180; 
+}
 
-    .btn-send-email:hover {
-        background-color: #3db180;
-    }
+/* Hover-effekt */
+.btn-send-email:hover {
+    background-color: #3db180; 
+    cursor: pointer;
+}
+
 }
