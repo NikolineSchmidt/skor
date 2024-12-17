@@ -1,24 +1,24 @@
-/* Grundlæggende styling - Mobile First */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Body styling: baggrundsfarve og centrering */
 body {
     font-family: Arial, sans-serif;
-    background-color: #201e4b; /* Baggrundsfarve */
+    background-color: #201e4b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Fylder hele skærmen vertikalt */
+    height: 100vh;
     margin: 0;
 }
 
-/* Header styling */
+/* Header styling: layout og placering af logo */
 header {
-    background-color: #7a58e4; /* Baggrundsfarve for header */
+    background-color: #7a58e4;
     width: 100%;
     padding: 20px 0;
     position: absolute;
@@ -30,16 +30,17 @@ header {
     height: 150px;
 }
 
+/* Logo container: struktur og tekstplacering */
 .logo-container {
     display: flex;
-    flex-direction: column; /* Placerer elementerne vertikalt */
+    flex-direction: column;
     align-items: center;
 }
 
 .logo-container img {
-    height: 60px; /* Justér størrelsen på logoet */
-    width: auto; /* Bevarer proportionerne */
-    margin-bottom: 10px; /* Giver afstand mellem logo og tekst */
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 .logo-container span {
@@ -48,20 +49,20 @@ header {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-
+/* Header titel styling */
 header h1 {
-    font-size: 32px; /* Ens font-størrelse */
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
 }
 
-/* Styling for hovedindholdet */
+/* Main content styling: layout og tekst */
 .main-content {
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@ header h1 {
     align-items: center;
     text-align: center;
     padding: 20px;
-    margin-top: 100px; /* Giver plads mellem header og indhold */
+    margin-top: 100px;
 }
 
 .main-content p {
@@ -81,19 +82,19 @@ header h1 {
     padding: 20px;
 }
 
-/* Media query til desktop */
+/* Media query til desktop: justeringer for større skærme */
 @media (min-width: 768px) {
     header h1 {
-        font-size: 60px; /* Ens font-størrelse på desktop */
+        font-size: 60px;
     }
 
     .main-content {
-        margin-top: 120px; /* Mere plads til top på desktop */
+        margin-top: 120px;
         padding: 30px;
     }
 
     .main-content p {
-        font-size: 24px; /* Større tekst på desktop */
+        font-size: 24px;
         padding: 30px;
     }
 }

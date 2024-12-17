@@ -2,7 +2,7 @@
 main {
     background-color: #201e4b;
     padding: 20px;
-    color: #bfc0d4;
+    color: #fff;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ main h1 {
 .content {
     display: flex;
     flex-direction: column; /* På mobile enheder vises tekst og billede i en kolonne */
-    gap: 20px; /* Mellemrum mellem tekst og billede */
+    gap: 20px; 
 }
 
 /* Tekst til venstre */
@@ -44,10 +44,10 @@ main h1 {
     }
 
     .text {
-        width: 50%; /* Teksten fylder 50% af bredden */
+        width: 50%; 
     }
 
     .image {
-        width: 40%; /* Billedet fylder 40% af bredden */
+        width: 40%; 
     }
 }

@@ -1,4 +1,5 @@
 /* Grundopsætning (Mobile-First) */
+/* Grundlæggende styling for body-elementet */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -17,6 +18,7 @@ main {
     padding: 15px 0;
 }
 
+/* Styling af overskriften */
 h1 {
     font-size: 50px; 
     font-weight: bold;
@@ -26,7 +28,7 @@ h1 {
     text-align: center;
 }
 
-/* Styling af sectionen priser */
+/* Styling af sektionen priser */
 .priser {
     background-color: #7a58e4;
     font-size: 1.5em;
@@ -37,21 +39,21 @@ h1 {
     max-width: 90%; /* Maksimal bredde for at gøre boksen mindre */
 }
 
-/* Tider-container skal være flex og arrangere tider og priser korrekt */
+/* Tider-container til flex så de placeres korrekt*/
 .tider-container {
     display: flex;
-    justify-content: space-between; /* Gør så tiderne står ved siden af hinanden */
-    gap: 20px; /* Afstand mellem tiderne */
+    justify-content: space-between;
+    gap: 20px;
     margin-top: 10px;
 }
 
-/* Styling af tiderne og priserne */
+/* Styling af tiderne */
 .tidlig, .sent {
     flex: 1;
     text-align: center;
 }
 
-/* Styling af tekst og priser */
+/* Styling af priser */
 .tidlig p, .sent p {
     margin: 10px 0;
     font-size: 1.1em; /* Justerer fontstørrelsen */
@@ -72,8 +74,8 @@ h1 {
     font-size: 1.2em;
     text-align: center;
     padding: 20px;
-    margin: 20px auto; /* Centrerer boksene */
-    max-width: 90%; /* Maksimal bredde for at gøre boksen mindre */
+    margin: 20px auto;
+    max-width: 90%;
 }
 
 /* Ensartet styling af teksten i info-karaoke */
@@ -97,33 +99,29 @@ h1 {
 }
 
 .btn-karaoke {
-    background-color: #7a58e4; /* Grøn baggrund */
+    background-color: #7a58e4; 
     border: none;
     border-radius: 5px;
     padding: 15px 40px;
     margin: 5px 20px;
-    color: #fff; /* Hvid tekst */
+    color: #fff; 
     font-size: 15px;
-    text-decoration: none; /* Fjerner understregning */
-    font-weight: bold; /* Gør teksten fed */
-    display: inline-block; /* Sikrer at knappen opfører sig som en blok */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
 }
 
 /* Gør linket hvidt i knapperne */
 .btn-karaoke a {
-    color: #fff; /* Hvid tekst i linket */
-    text-decoration: none; /* Fjerner understregning i linket */
+    color: #fff;
+    text-decoration: none;
 }
 
 
 
-
-
-
-
-/* Gør priser og info-karaoke til flex-bokse på større skærme */
+/* Responsivt layout for større skærme */
 @media (min-width: 768px) {
-    /* Sørg for, at priser og info-karaoke deler pladsen ligeligt */
+  
     .content-container {
         display: flex;
         gap: 20px;
@@ -132,7 +130,7 @@ h1 {
 
     .priser, .info-karaoke {
         flex: 1;
-        max-width: 48%; /* Bredde til at få dem til at stå side om side */
+        max-width: 48%; 
     }
 
     .btn-karaoke:hover {
