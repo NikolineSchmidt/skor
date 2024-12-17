@@ -92,7 +92,7 @@ h4{
 .burger-historie {
     background-color: #ECE9E7;
     color: #201e4b;
-    font: size 1.5em;
+    font-size: 1.5em;
     margin: 50px;
     max-width: 95%;
     padding: 20px;
@@ -100,6 +100,22 @@ h4{
     text-align: center;
     display: flex;
     flex-direction: column; 
+}
+
+.btn-send-email {
+    background-color: #7a58e4; /* Lilla baggrundsfarve */
+    color: white; /* Hvid tekst */
+    font-family: Arial, sans-serif; /* Font */
+    font-size: 1em; /* Skalerbar tekststørrelse */
+    padding: 15px 40px; /* Indre margin */
+    border: none; /* Fjern standard kant */
+    border-radius: 20px; /* Rundede hjørner */
+    text-decoration: none; /* Fjern understrikning */
+    text-align: center; /* Centrer tekst */
+    display: inline-block; /* Sørg for at knapperne er inline */
+    cursor: pointer; /* Markér som klikbar */
+    transition: background-color 0.3s ease;
+
 }
 
 /* Generelle knapstilarter */
