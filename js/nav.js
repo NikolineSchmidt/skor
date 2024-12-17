@@ -1,3 +1,5 @@
+"use strict;"
+
 const menuItems = document.querySelectorAll(".nav-list-item");
 
 menuItems.forEach((item) => {
@@ -5,27 +7,27 @@ menuItems.forEach((item) => {
         const subMenu = item.querySelector(".nav-sub-menu");
         const target = e.target;
 
+        // Hvis undermenuen findes og målet ikke er et undermenu-item
         if (subMenu && !target.classList.contains("nav-sub-menu-item")) {
-            // Håndter åbning/lukning af undermenu
-            item.classList.toggle("active");
+            // Toggling af undermenuens synlighed
+            const isActive = item.classList.contains("active");
 
-            // Luk alle andre undermenuer
-            menuItems.forEach((el) => {
-                if (el !== item) {
-                    el.classList.remove("active");
-                }
-            });
+            // Luk alle undermenuer først
+            menuItems.forEach((el) => el.classList.remove("active"));
+
+            // Hvis undermenuen ikke allerede er aktiv, så åbn den
+            if (!isActive) {
+                item.classList.add("active");
+            }
         }
-    });
+    }, { passive: true });
 });
 
-// Sørg for, at links i undermenuer fungerer normalt
+// Forhindr klik på links i undermenuer at påvirke menuen
 const subMenuLinks = document.querySelectorAll(".nav-sub-menu-item a");
 
 subMenuLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-        e.stopPropagation(); // Forhindr klik på linket i at påvirke menuen
-        // Linket vil navigere normalt
-    });
+        e.stopPropagation(); // Stopper videre propagation, men tillader navigation
+    }, { passive: true });
 });
-
