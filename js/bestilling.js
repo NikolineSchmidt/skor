@@ -51,10 +51,10 @@ function updateTimeOptions(timeSelectId, dateInputId) {
     let startTime, endTime;
     if (dayOfWeek === 5 || dayOfWeek === 6) { // Fredag og Lørdag
         startTime = 15; // 15:00
-        endTime = 1; // 02:00 næste dag
+        endTime = 1; // 01:00 næste dag
     } else { // Alle andre dage
         startTime = 15; // 15:00
-        endTime = 22; // 23:00
+        endTime = 22; // 22:00
     }
 
     // Generer tidspunkter
@@ -99,5 +99,5 @@ document.getElementById('giftCardForm').addEventListener('submit', function(even
     E-mail: ${customerEmail} \n
     Betalingsmetode: ${paymentMethod}`);
 
-    // Tilføj integration med betalingssystem her (Stripe, PayPal osv.)
+    // Tilføj integration med betalingssystem her, det har vi ikke valgt at gøre
 });
