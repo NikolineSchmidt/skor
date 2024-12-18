@@ -1,11 +1,10 @@
-/* 404 side */
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #201e4b; /* Skor mørkeblå */
+    background-color: #201e4b;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -14,44 +13,44 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* Centrerer indholdet vertikalt */
+    justify-content: center;  
     align-items: center;
-    height: 100%;  /* Sørg for, at main fylder hele højden */
-    padding: 20px;  /* Tilføj lidt padding omkring hele main-sektionen */
+    height: 100%;  
+    padding: 20px;  
 }
 
 main h1 {
-    margin-bottom: 1.5rem;  /* Øger afstanden mellem overskriften og næste element */
+    margin-bottom: 1.5rem;  
     font-size: 2rem;
 }
 
-/* Stilen for den ekstra tekst */
 main p {
-    margin: 0.5rem 0;  /* Øg marginen mellem p-elementerne */
+    margin: 0.5rem 0;  
     font-size: 1.2rem;
 }
 
-/* Stilen for knappen (link) */
-main a {
-    margin-top: 20px;  /* Hold margin-top for at skabe afstand fra de øvrige elementer */
+a.back-btn {
+    margin-top: 20px;  
     font-size: 1rem;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+    background-color: #7a58e4;
     transition: background-color 0.3s, color 0.3s;
 }
 
-
-footer {
-    background-color: #201E4B; /* Eksempel på farve til footer */
-    color: white; /* Hvid tekstfarve */
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Fuld bredde */
+a.back-btn:hover {
+    background-color: #3db180; 
 }
 
-/* Animering for billedet */
+#dart-image {
+    width: 75%;
+    max-width: 300px;
+    height: auto;
+    animation: hop 1s ease-in-out infinite;
+}
+
 @keyframes hop {
     0%, 100% {
         transform: translateY(0);
@@ -61,18 +60,8 @@ footer {
     }
 }
 
-/* Style for billedet */
-#dart-image {
-    width: 75%;
-    max-width: 300px;
-    height: auto;
-    animation: hop 1s ease-in-out infinite;
-}
-
-/* Responsivt design */
 @media (max-width: 768px) {
     #dart-image {
         width: 90%;
     }
 }
-
