@@ -6,45 +6,48 @@ body {
     background-color: #201e4b;
     color: white;
 }
-/* styleing af h1 text på siden*/
-h1 {
+
+/* Styling for main-området */
+main {
+    padding: 20px;
+    max-width: 600px; /* Styler bredden på main-tagget */
+    margin: 0 auto;
+}
+
+/* Styling af h1 tekst kun i main */
+main h1 {
     margin: 0 0 10px;
     color: #7a58e4;
-    text-align: center; /*centere texten*/
+    text-align: center;
     font-size: 50px; 
     font-weight: bold;
-    letter-spacing: 2px; /*2px space mellem bogstaverne*/
-    text-transform: uppercase; /*store bogstaver*/
-    margin: 0;
-    
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
-/* h2 styleing*/
-h2 {
+
+/* h2 styling kun i main */
+main h2 {
     color: #201e4b;
 }
 
-ul {
+/* Liste-styling kun i main */
+main ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-/* tykkelsen på texten*/
-strong {
+
+/* Tykkelsen på teksten kun i main */
+main strong {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
-    max-width: 600px; /* styler bredden på main tagget*/
-    margin: 0 auto;
-}
-
-/* Information Boxes */
-.info-section {
+/* Information Boxes kun i main */
+main .info-section {
     margin-top: 20px;
 }
-/* her under styles infoboxen med farve, margin, padding, border radius, font størrelsen, font størrelsen på p & h2*/
-.info-box {
+
+main .info-box {
     background-color: #7a58e4;
     margin: 20px 0;
     padding: 15px;
@@ -52,34 +55,34 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.info-box p, .info-box li {
+main .info-box p, main .info-box li {
     margin: 10px 0;
     line-height: 1.6;
     font-size: 1rem;
 }
 
-.info-box h2 {
+main .info-box h2 {
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
-/* Resposive design, som hjælper */
+/* Responsivt design kun for main */
 @media (min-width: 768px) {
     main {
         max-width: 900px;
     }
 
-    .info-box {
+    main .info-box {
         display: flex;
         flex-direction: column;
         padding: 20px;
     }
 
-    .info-box h2 {
+    main .info-box h2 {
         font-size: 1.6rem;
     }
 
-    .info-box p, .info-box li {
+    main .info-box p, main .info-box li {
         font-size: 1.1rem;
     }
 }
