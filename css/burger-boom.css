@@ -83,6 +83,7 @@ h4{
     padding: 20px;
 }
 
+
 /* Styling af oversigten til burger booms burgere og priser */
 .burgerboom-menu {
     background-color: #3db180;
@@ -91,7 +92,37 @@ h4{
     margin: 20px 0px;
     padding: 10px;
     text-align: center;
+    font-size: 20px;
 }
+
+/* Gør hver linje til en flex container, så vi kan styre layoutet bedre */
+.burgerboom-menu p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+/* Burgernavnet får sin egen stil */
+.burger-name {
+    font-weight: bold;
+}
+
+/* Prikkenes container bliver gjort som en inline-flex, så den kan fylde mellem burger-navn og pris */
+.dots {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    white-space: nowrap;
+}
+
+/* Prisen bliver justeret til højre */
+.price {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 
 /* Styling af tekst under burger booms menu */
 .tekst-info p {
@@ -201,4 +232,13 @@ h4{
     width: 100%; /* Sørger for, at bredden er 100% af forælderen, men maks. 70% */
 }
 
+/* Responsiv design til mobil */
+@media (max-width: 768px) {
+    .burgerboom-menu p {
+        font-size: 18px; /* Mindre skriftstørrelse på mobil */
+    }
+    .dots::before {
+        font-size: 20px; /* Mindre prikker på mobil */
+    }
+}
 }

@@ -19,7 +19,7 @@ main {
 
 /* Hovedoverskrift (h1) */
 h1 {
-    font-size: 50px; 
+    font-size: 45px; 
     font-weight: bold; 
     letter-spacing: 2px; 
     text-transform: uppercase; 
@@ -47,7 +47,7 @@ h1 {
 /* Styling af billede i tekst-sektionen */
 .image-text img {
     width: 100%; 
-    max-width: 400px; 
+    max-width: 370px; 
     height: auto; 
     margin: 15px 0;
     border-radius: 8px; 
@@ -159,6 +159,12 @@ h1 {
         font-size: 1.4em; 
         padding: 30px; 
     }
+    
+
+h1 {
+    font-size: 50px; 
+
+}
 }
 
     

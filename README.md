@@ -7,6 +7,7 @@ Dette projekt indeholder JavaScript-filer, der håndterer forskellige funktional
 - [nav.js](#navjs)
 - [footer.js](#footerjs)
 - [bestilling.js](#bestillingjs)
+- [burger-boom.js](#burger-boomjs)
 
 ## nav.js
 
@@ -53,6 +54,18 @@ Dette projekt indeholder JavaScript-filer, der håndterer forskellige funktional
 - Filen kræver, at HTML-dokumentet indeholder de nødvendige formularer med de korrekte id'er (`dartBookingForm`, `karaokeBookingForm`, `giftCardForm`, etc.).
 - For korrekt funktion af tidsstyring skal datovælgeren have et gyldigt datoformat.
 
+## burger-boom.js
+
+### Funktionalitet
+
+- **Generering af prikker mellem burger-navn og pris:** Denne fil håndterer genereringen af prikker mellem burger-navnet og prisen i menuen. Prikkerne tilpasses dynamisk afhængigt af længden af burger-navnet og prisen, og fylder præcist rummet mellem de to elementer.
+- **Responsive prikker:** Prikkerne justerer sig automatisk, når vinduet ændres i størrelse, så layoutet forbliver responsivt.
+
+### Brug
+
+- Filen anvender `window.addEventListener` til at køre funktionen `generateDots` både ved indlæsning af siden og når størrelsen på vinduet ændres.
+- Prikkerne beregnes baseret på bredden af burger-navnet og prisen, så de fylder det tilgængelige rum mellem de to elementer.
+
 ## Installation
 
 1. Download eller klon projektet.
@@ -63,3 +76,4 @@ Dette projekt indeholder JavaScript-filer, der håndterer forskellige funktional
 <script src="path/to/nav.js"></script>
 <script src="path/to/footer.js"></script>
 <script src="path/to/bestilling.js"></script>
+<script src="path/to/burger-boom.js"></script>
