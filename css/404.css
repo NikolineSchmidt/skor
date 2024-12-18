@@ -1,56 +1,64 @@
+/* Grundlæggende styling for 404-siden */
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* Brug flexbox for at centrere indholdet vertikalt og horisontalt */
     flex-direction: column;
-    height: 100vh;
-    background-color: #201e4b;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    height: 100vh; 
+    background-color: #201e4b; 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
 }
 
+/* Styling for hovedindholdet på siden */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    align-items: center;
+    align-items: center;  
     height: 100%;  
-    padding: 20px;  
+    padding: 20px;
 }
 
+/* Styling af hovedoverskriften */
 main h1 {
-    margin-bottom: 1.5rem;  
+    margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
+/* Styling af paragrafen */
 main p {
-    margin: 0.5rem 0;  
+    margin: 0.5rem 0;
     font-size: 1.2rem;
 }
 
+/* Styling af knappen til at gå tilbage til forsiden */
 a.back-btn {
-    margin-top: 20px;  
+    margin-top: 20px;
     font-size: 1rem;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #7a58e4;
+    background-color: #7a58e4; 
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover-effekt på knappen */
 a.back-btn:hover {
-    background-color: #3db180; 
+    background-color: #3db180;  
 }
 
+/* Styling af billedet med hop-animation */
 #dart-image {
     width: 75%;
     max-width: 300px;
     height: auto;
-    animation: hop 1s ease-in-out infinite;
+    animation: hop 1s ease-in-out infinite; /* Animerer billedet */
 }
 
+/* Animation, der får billedet til at hoppe op og ned */
 @keyframes hop {
     0%, 100% {
         transform: translateY(0);
@@ -60,8 +68,9 @@ a.back-btn:hover {
     }
 }
 
+/* Responsiv design for mindre skærme */
 @media (max-width: 768px) {
     #dart-image {
-        width: 90%;
+        width: 90%; /* Ændrer billedets størrelse på små skærme */
     }
 }

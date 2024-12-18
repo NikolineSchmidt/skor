@@ -3,9 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #201e4b; 
-    
 }
 
+/* Styling af h2 */
 h2{
     font-size: 25px; 
     font-weight: bold;
@@ -15,11 +15,10 @@ h2{
     text-align: center; 
 }
 
-
 section {
     padding: 2rem;
     margin: 1rem auto;
-    max-width: 800px; /*bredden på section boksen 800 px*/
+    max-width: 800px;
     border: 1px solid #201e4b;
     border-radius: 8px;
     background-color: #201e4b;
@@ -27,16 +26,19 @@ section {
     margin-top: 55px;
 }
 
+/* Styling af form: Flexbox-layout til kolonneorientering */
 form {
-    display: flex; /*viser indholdet*/
-    flex-direction: column; /* viser indholdet i en kolonne*/
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
+/* Styling af label*/
 label {
     font-weight: bold;
 }
 
+/* Styling af input, textarea og button */
 input, textarea, button {
     padding: 0.5rem;
     font-size: 1rem;
@@ -44,18 +46,20 @@ input, textarea, button {
     border-radius: 4px;
 }
 
+/* Styling af button */
 button {
     background-color: #7a58e4;
     color: white;
     border: none;
     cursor: pointer;
 }
-/* når man holder over knappen bliver den grøn*/
+
+/* Hover-effekt på button */
 button:hover {
     background-color: #3db180;
 }
 
-/* Responsiv design, til en mobil skærm */
+/* Responsivt design: Tilpasning af layout for skærme med max bredde på 768px */
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
@@ -76,6 +80,7 @@ button:hover {
     }
 }
 
+/* Yderligere responsiv tilpasning for skærme med max bredde på 480px */
 @media (max-width: 480px) {
     body {
         font-size: 14px;
