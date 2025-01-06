@@ -19,13 +19,18 @@ main {
 
 /* Hovedoverskrift (h1) */
 h1 {
-    font-size: 45px; 
+    font-size: 60px; /* Gør teksten større for at efterligne skiltet */
     font-weight: bold; 
     letter-spacing: 2px; 
     text-transform: uppercase; 
     margin: 0;
     text-align: center; 
+    color: #D62BFF; /* Lilla neonfarve */
+    text-shadow: 0 0 5px #d84efa, 0 0 10px #D62BFF,  
+                 0 0 40px #FF69FF, 0 0 50px #FF69FF;
+    font-family: 'Monoton', sans-serif; /* Retro neon skrifttype */
 }
+
 
 /* Wrapper til billede og tekst */
 .content-wrapper {
