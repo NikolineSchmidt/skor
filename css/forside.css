@@ -35,7 +35,6 @@ main h1 {
 }
 
 .language-switcher {
-    
     gap: 10px;
     justify-content: flex-end; /* Standard til desktop */
     padding: 10px;
