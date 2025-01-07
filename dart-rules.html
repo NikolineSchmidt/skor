@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lær dart reglerne og spillet med vores guide">
+    <title>Dart Rules</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dart-regler.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu" />
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/footer.js" defer></script>
+    <script src="js/nav.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- Navigation Title: Contains the logo with a link to aarhus.html -->
+        <nav class="nav-title">
+            <a href="aarhus.html" class="logo">
+                <img src="img/skor-logo.webp" alt="Skor logo">
+            </a>
+        </nav>
+    
+        <!-- Navigation Checkbox: Used to control the visibility of the menu -->
+        <input type="checkbox" id="nav-check">
+    
+        <!-- Navigation Button: Burger icon for mobile view -->
+        <nav class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </nav>  
+    
+        <!-- Navigation List: Primary navigation items -->
+        <ul class="nav-list">
+            <!-- DART menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">DART</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#dart">BOOK A LANE</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-regler.html">RULES</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-pris.html">PRICES FOR DART LANES</a></li>
+                </ul>
+            </li>
+    
+            <!-- KARAOKE menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">KARAOKE</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#karaoke">BOOK OUR ROOM</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-hits.html">KARAOKE HITS</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-pris.html">PRICES FOR KARAOKE</a></li>
+                </ul>
+            </li>
+    
+            <!-- EVENTS menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">EVENTS</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="404.html">TUESDAY TOURNAMENT</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">COMPANY PARTY</a></li>
+                    <li class="nav-sub-menu-item"><a href="burger-boom.html">BIGGER GROUPS</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">UPCOMING EVENTS</a></li>
+                </ul>
+            </li>
+    
+            <!-- MENU CARD -->
+            <li class="nav-list-item">
+                <a href="menukort.html">MENU CARD</a>
+            </li>
+    
+            <!-- ABOUT US menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">ABOUT US</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#kontakt">CONTACT US</a></li>
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#gavekort">GIFTCARD</a></li>
+                    <li class="nav-sub-menu-item"><a href="praktisk-info.html">PRACTICAL INFORMATION</a></li>
+                </ul>
+            </li>
+    
+            <!-- BOOK NOW: Featured menu for booking -->
+            <li class="nav-list-item booking-item">
+                <a href="bestilling.html">BOOK NOW</a>
+            </li>
+        </ul>
+    </header>
+    
+
+    <main>
+        <h1>Dart RULES</h1>
+        <div class="center-text">
+            Here you’ll find our 5 different games, all designed and programmed by us.<br>
+            We hope you’ll find them just as fun as we do!
+            The games increase in difficulty, starting with the easiest one, "Chug It," and ending with the hardest, "Shanghai."
+            Are you ready to take on the challenge? Let the games begin, and see if you can hit the bullseye! 🎯
+        </div>
+        
+
+        <div class="flip-container">
+            <!-- Flip Card 1: CHUG IT -->
+            <div class="flip-card">
+                <h2>CHUG IT</h2>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/chugit.webp" alt="Chug It Image">
+                        <p>The game challenges you to finish your pint of beer in a fun and competitive way while aiming to score exactly 0 points.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>Each player starts with 185 points.</li>
+                            <li>Aim at the dartboard and take a sip of your beer.</li>
+                            <li>The size of the sip depends on how many points you score.</li> 
+                            <li>The first player to reach exactly 0 points wins the game.</li> 
+                            <li>If you go below 0 or fail to hit exactly 0, you "bust" and lose points for that round.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 2: DONK -->
+            <div class="flip-card">
+                <h2>DONK</h2>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/donk.webp" alt="donk">
+                        <p>Avoid becoming the "DONK" by beating or matching the previous player's score. The last player without "DONK" wins.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>The game is an Icelandic twist on the classic H-O-R-S-E and is played by scoring higher than the previous player.</li> 
+                            <li>You must always match or beat the previous player’s score.</li> 
+                            <li>If you fail to do so, you receive a letter (D, O, N, or K).</li> 
+                            <li>Once you’ve collected all four letters, you become the "DONK" and are out of the game.</li> 
+                            <li>The winner is the last player standing who hasn’t received "DONK."</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 3: Killer -->
+            <div class="flip-card">
+                <h2>Killer</h2>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/killer.webp" alt="killer Image">
+                        <p>The goal of the game is to eliminate your opponents by hitting their zones while protecting your own.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>Each team or player is assigned a zone on the board.</li> 
+                            <li>You need to hit your zone three times to become a "Killer."</li> 
+                            <li>Once you're a "Killer," you must try to hit your opponents' zones to eliminate them.</li> 
+                            <li>The last player or team standing wins the game.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 4: MINE-SWEEPER -->
+            <div class="flip-card">
+                <h2>MINE-SWEEPER</h2>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/minesweeper.webp" alt="mine sweeper Image">
+                        <p>The goal is to score as many points as possible before the game ends.</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>Each player starts with three lives.</li> 
+                            <li>The dartboard works like a regular dartboard, but with bomb zones marked in red on the screen.</li> 
+                            <li>In each round, more bomb zones are added.</li> 
+                            <li>If you hit a bomb zone, you score zero points for the throw and lose one life.</li> 
+                            <li>The winner is the player with the most points when all players are eliminated or after 8 rounds.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 5: SHANGHAI -->
+            <div class="flip-card">
+                <h2>SHANGHAI</h2>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/shanghai.webp" alt="Shanghai Image">
+                        <p>How accurate are you all over the board?</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <ul>
+                            <li>Shanghai consists of 8 rounds.</li> 
+                            <li>Hit the target number in each round to collect points.</li> 
+                            <li>You earn as many points as the target number for each throw (doubles and triples count).</li> 
+                            <li>The winner is the team or player with the most points after all rounds.</li> 
+                            <li>You can also achieve a Shanghai by hitting a single, double, and triple of the target number in the same round and win immediately.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Contact -->
+        <div class="footer-section" id="contact">
+            <h3>Contact</h3>
+            <p>Telefontorvet 10, Aarhus</p>
+            <p><a href="mailto:skorbar@skorbar.dk">skorbar@skorbar.dk</a> <span class="obs">(We respond within 2 business days)</span></p>
+            <p>Phone: <a href="tel:41221180">+45 41 22 11 80</a> <span class="obs">(Note: We only answer calls during opening hours and not when we are busy)</span></p>
+            <div id="map"></div>
+        </div>
+        <!-- Opening Hours -->
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Monday: 15:00-22:00</p>
+            <p>Tuesday: 15:00-22:00</p>
+            <p>Wednesday: 15:00-23:00</p>
+            <p>Thursday: 15:00-00:00</p>
+            <p>Friday: 13:00-02:00</p>
+            <p>Saturday: 13:00-02:00</p>
+            <p>Sunday: 13:00-22:00</p>
+        </div>
+        <!-- Where to Find Us -->
+        <div class="footer-section">
+            <h3>Where to Find</h3>
+            <p><a href="menukort.html">Menu card</a></p>
+            <p><a href="bestilling.html">Booking</a></p>
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+            </ul>            
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

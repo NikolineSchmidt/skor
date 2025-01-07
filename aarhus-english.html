@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forside til skor aarhus">
+    <title>Skor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu" />
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/forside.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Title: Contains the logo with a link to aarhus.html -->
+        <nav class="nav-title">
+            <a href="aarhus.html" class="logo">
+                <img src="img/skor-logo.webp" alt="Skor logo">
+            </a>
+        </nav>
+    
+        <!-- Navigation Checkbox: Used to control the visibility of the menu -->
+        <input type="checkbox" id="nav-check">
+    
+        <!-- Navigation Button: Burger icon for mobile view -->
+        <nav class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </nav>  
+    
+        <!-- Navigation List: Primary navigation items -->
+        <ul class="nav-list">
+            <!-- DART menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">DART</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#dart">BOOK A LANE</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-regler.html">RULES</a></li>
+                    <li class="nav-sub-menu-item"><a href="dart-pris.html">PRICES FOR DART LANES</a></li>
+                </ul>
+            </li>
+    
+            <!-- KARAOKE menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">KARAOKE</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#karaoke">BOOK OUR ROOM</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-hits.html">KARAOKE HITS</a></li>
+                    <li class="nav-sub-menu-item"><a href="karaoke-pris.html">PRICES FOR KARAOKE</a></li>
+                </ul>
+            </li>
+    
+            <!-- EVENTS menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">EVENTS</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="404.html">TUESDAY TOURNAMENT</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">COMPANY PARTY</a></li>
+                    <li class="nav-sub-menu-item"><a href="burger-boom.html">BIGGER GROUPS</a></li>
+                    <li class="nav-sub-menu-item"><a href="404.html">UPCOMING EVENTS</a></li>
+                </ul>
+            </li>
+    
+            <!-- MENU CARD -->
+            <li class="nav-list-item">
+                <a href="menukort.html">MENU CARD</a>
+            </li>
+    
+            <!-- ABOUT US menu with submenu -->
+            <li class="nav-list-item">
+                <a href="#">ABOUT US</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#kontakt">CONTACT US</a></li>
+                    <li class="nav-sub-menu-item"><a href="bestilling.html#gavekort">GIFTCARD</a></li>
+                    <li class="nav-sub-menu-item"><a href="praktisk-info.html">PRACTICAL INFORMATION</a></li>
+                </ul>
+            </li>
+    
+            <!-- BOOK NOW: Featured menu for booking -->
+            <li class="nav-list-item booking-item">
+                <a href="bestilling.html">BOOK NOW</a>
+            </li>
+        </ul>
+    </header>
+    
+
+    <main>
+        <h1>Welcome to SKOR – more than just dart!</h1>
+        
+        <!-- Content Container: Contains text and image -->
+        <div class="content">
+            <div class="text">
+                <p>Skor is not just an ordinary dart bar. Throughout our venue, you'll find nine dart lanes, each with a tablet and flat screen, where you can choose from several different games and track your results in real-time. Our unique system, which we developed ourselves, makes everything even more fun and easier – three cameras automatically detect where the dart lands and keep track of both turns and points for you. All you need to do is focus on having fun!</p>
+                <p>As an authentic Icelandic dart bar, we offer a selection of Icelandic drinks, so you can get a taste of Iceland while you play. The story of Skor began quite unexpectedly. It all started when Árni visited a friend in Aarhus. Originally, they were just going to enjoy some open-faced sandwiches and a Carlsberg, but their day took a turn when they stumbled upon the premises here on Telefontorvet. That was the beginning of Skor.</p>
+            </div>
+            <img src="img/ordbog.webp" alt="Skor dart bar" class="image">
+        </div>
+    </main>
+    
+    
+    
+    
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Contact -->
+        <div class="footer-section" id="contact">
+            <h3>Contact</h3>
+            <p>Telefontorvet 10, Aarhus</p>
+            <p><a href="mailto:skorbar@skorbar.dk">skorbar@skorbar.dk</a> <span class="obs">(We respond within 2 business days)</span></p>
+            <p>Phone: <a href="tel:41221180">+45 41 22 11 80</a> <span class="obs">(Note: We only answer calls during opening hours and not when we are busy)</span></p>
+            <div id="map"></div>
+        </div>
+        <!-- Opening Hours -->
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Monday: 15:00-22:00</p>
+            <p>Tuesday: 15:00-22:00</p>
+            <p>Wednesday: 15:00-23:00</p>
+            <p>Thursday: 15:00-00:00</p>
+            <p>Friday: 13:00-02:00</p>
+            <p>Saturday: 13:00-02:00</p>
+            <p>Sunday: 13:00-22:00</p>
+        </div>
+        <!-- Where to Find Us -->
+        <div class="footer-section">
+            <h3>Where to Find</h3>
+            <p><a href="menukort.html">Menu card</a></p>
+            <p><a href="bestilling.html">Booking</a></p>
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+            </ul>            
+        </div>
+    </div>
+</footer>   
+
+    <!-- Linker til js i slutningen af body -->
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
