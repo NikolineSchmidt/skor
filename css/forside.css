@@ -34,8 +34,41 @@ main h1 {
     height: auto;
 }
 
+.language-switcher {
+    
+    gap: 10px;
+    justify-content: flex-end; /* Standard til desktop */
+    padding: 10px;
+    background-color: #7a58e4;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.language-switcher a.active {
+    background-color: #201e4b; 
+    color: #fff;
+}
+
+.language-switcher a:hover:not(.active) {
+    background-color: #3db180;
+    color: #fff;
+}
+
+
 /* Media Query for desktop */
 @media (min-width: 768px) {
+    .language-switcher {
+        justify-content: flex-start; /* Flyt links til venstre */
+        padding: 10px 15px; /* Juster padding */
+        left: 0; /* Sørg for, at den starter ved venstre kant */
+    }
     /* Gør indholdet horisontalt (tekst til venstre og billede til højre) */
     .content {
         flex-direction: row;
