@@ -153,32 +153,36 @@ h2 {
     padding-top: 10px; /* Øger afstanden fra toppen */
 }
 
+/* Styling til sprogskifterens navigation */
 .language-switcher {
-    gap: 10px;
-    justify-content: flex-end; /* Standard til desktop */
-    padding: 10px;
-    background-color: #7a58e4;
+    gap: 10px; 
+    justify-content: flex-end; /* Justerer linksene til højre side */
+    padding: 10px; 
+    background-color: #7a58e4; 
 }
 
+/* Generel styling til linksene i sprogskifteren */
 .language-switcher a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
+/* Styling til det aktive link */
 .language-switcher a.active {
     background-color: #201e4b; 
-    color: #fff;
+    color: #fff; 
 }
 
 
 .language-switcher a:hover:not(.active) {
-    background-color: #3db180;
-    color: #fff;
+    background-color: #3db180; 
+    color: #fff; 
 }
+
 
 /* Responsiv styling for mobil */
 @media (max-width: 768px) {
