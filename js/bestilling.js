@@ -103,3 +103,4 @@ document.getElementById('giftCardForm').addEventListener('submit', function(even
 
     // Tilføj integration med betalingssystem her, det har vi ikke valgt at gøre
 });
+
